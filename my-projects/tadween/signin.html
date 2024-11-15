@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--   style.css Link   -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--    logo primary page    -->
+    <link rel="icon" href="img/logo_1718478281.png">
+    <title>Tadween</title>
+</head>
+<body>
+    <section id="hero">
+         <!--   Right Page (Just Logo)   -->
+        <div class="rightPage">
+            <img src="img/logo_1718478281.png" alt="" id="logo">
+        </div>   
+        <!--  Login Form   -->
+        <div class="login" id="login">
+            <img src="img/logo_1718478281.png" alt="">
+            <h2>مرحبا بك في تدوين </h2>
+            <p>تسجيل الدخول</p>
+            <!--  Form  user & Password-->
+            <form action="">
+                <!--  userName Form  -->
+                <div class="userForm" id="offf">
+                    <label for="userEnterDar">اسم المستخدم أو البريد الالكتروني</label>
+                    <input title="الرجاء ادخال اسم المستخدم او البريد الالكتروني" type="email" id="userEnterDar" placeholder="عنوان البريد الالكتروني أو اسم المستخدم" required>
+                </div>
+                <!--  password Form  -->
+                <div class="passForm">
+                    <label for="passEnterDar">كلمة المرور</label>
+                    <input title="الرجاء ادخال كلمة المرور" type="password" id="passEnterDar" placeholder="كلمة المرور" required>
+                </div>
+            <!--  again password  -->
+            <div class="againPass">
+                <p>نسيت كلمة المرور؟ <a href="#">اعادة تعيين كلمة المرور الخاصة بي </a></p>
+            </div>
+            <!--  login button  -->
+            <div class="logButton">
+                <!-- <button>تسجيل الدخول</button> -->
+                <input type="submit" value="تسجيل الدخول"  required>
+            </div>
+        </form>
+            <!--  sign Up   -->
+            <div class="signup">
+                <p>ليس لديك حساب؟ <a href="signup.html">انشاء حساب </a></p>
+            </div>
+        </div>
+    </section>
+    <!--   Footer     -->
+    <footer class="footer" id="footer">
+        <ul>
+            <li><a href="#">تعليمات المستخدم </a></li>
+            <li><a href="#">سياسة الخصوصية</a></li>
+            <li><a href="#">الكوكيز</a></li>
+            <li><a href="#">معلومات عنا</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">مركز المساعدات</a></li>
+            <li><a href="#">
+               <!--  Add Another language !!  -->
+               <select name="language" id="" class="lang">
+                   <option value=""><a href="#">العربية</a></option>
+                   <option value=""><a href="#">الانجليزية</a></option>
+               </select>
+            </a></li>
+            <li><a href="#">تدوين-2024 &copy;</a></li>
+        </ul>
+    </footer>
+    <!--   main.js Link   -->
+       <script>
+        onload = ()=>{
+        logo.style.right = '0px';
+        logo.style.transition = '1.5s';
+        login.style.left = '0px';
+        login.style.transition = '0.6s';
+        footer.style.right = '0px';
+        footer.style.transition = '2s';
+        mainPageI.style.color = '#44a7e0d0';
+        mainPageA.style.color = '#44a7e0d0';
+        // postText.focus();
+};
+       </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

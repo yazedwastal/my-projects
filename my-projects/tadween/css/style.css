@@ -1,0 +1,4855 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+:root{
+    --color-border-3: #44a7e0d0;
+    --color-border-1: #44a7e0;
+    --color-blue-5:#0d4769;
+    --color-white:#fff;
+    --color-white-3:#f4f4f4;
+    --color-black-1: #5b7083 ;
+    --color-link: #1b95e0;
+    --color-button-blue: #0a8bfe;
+    --color-white-5: #6b7081;
+    --box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 30px 0px;
+    --color-white-7: #eeeeeea5;
+}
+.fg-emoji-container{
+    z-index: 1000000 !important;
+}
+body{
+    font-family: system-ui;
+    user-select: none;
+}
+body.nav-open {
+    overflow: hidden;
+}
+.rightPgeMain .fa-ellipsis-vertical{
+    display: block;
+}
+.fa-ellipsis-vertical{
+    display: none;
+}
+.center-card p{
+    user-select: text;
+}
+img{
+    cursor: pointer;
+}
+/* hero page */
+#hero, #heroAdd{
+    width: 100%;
+    height: 92.8vh;
+    background-color: var(--color-white-3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.owl-stage-outer{
+    margin-right: 7px;
+}
+.owl-stage{
+    margin-right: -2000px;
+}
+.owl-carousel .owl-stage-outer{
+    width: 100%;
+}
+#hero .login {
+    position: relative;
+    left: -1000px;
+    width: 400px;
+    padding: 25px;
+    background-color: var(--login-color-bg);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 30px 0px;
+}
+#heroAdd .login{
+    position: relative;
+    width: 400px;
+    padding: 25px;
+    background-color: var(--login-color-bg);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 30px 0px;
+}
+#hero .login img , #heroAdd .login img{
+    width: 70px;
+    margin-bottom: 20px;
+}
+#hero .login h2 , 
+#hero .login p,
+#heroAdd .login h2{
+    color: var(--color-blue-5);
+    margin-bottom: 13px;
+    font-size: 30px;
+}
+#hero .login .userForm ,
+#hero .login .passForm,
+#heroAdd .login .userForm ,
+#heroAdd .login .passForm{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+#hero .login .userForm label ,
+#hero .login .passForm label,
+#heroAdd .login .userForm label ,
+#heroAdd .login .passForm label{
+    margin-bottom: 5px;
+    color: var(--color-black-1);
+    font-size: 15px;
+}
+#hero .login .userForm input ,
+#hero .login .passForm input,
+#heroAdd .login .userForm input ,
+#heroAdd .login .passForm input{
+    padding: 15px 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition-duration: 0.3s;
+}
+#hero .login .userForm input:focus ,
+#hero .login .passForm input:focus,
+#heroAdd .login .userForm input:focus ,
+#heroAdd .login .passForm input:focus{
+    border-bottom: 4px solid var(--color-border-1);
+}
+#hero .login .userForm input:hover ,
+#hero .login .passForm input:hover,
+#heroAdd .login .userForm input:hover ,
+#heroAdd .login .passForm input:hover{
+    border-bottom: 4px solid var(--color-border-1);
+    transition: 0.2s;
+}
+#hero .login .againPass ,
+#heroAdd .login .againPass ,
+#hero .login .signup,
+#heroAdd .login .signup{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#hero .login .againPass p,
+#heroAdd .login .againPass p,
+#hero .login .signup p,
+#heroAdd .login .signup p{
+    font-size: 13px;
+    color: var(--color-black-1);
+}
+#hero .login .againPass a,
+#heroAdd .login .againPass a,
+#hero .login .signup a,
+#heroAdd .login .signup a{
+    font-size: 13px;
+    color: var(--color-link);
+}
+#heroAdd .login .logButton,
+#hero .login .logButton{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#hero .login .logButton input,
+#heroAdd .login .logButton input{
+
+    width: 100%;
+    color: var(--color-white);
+    background-color: var(--color-border-1);
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+#hero .login .logButton input:hover,
+#heroAdd .login .logButton input:hover{
+    background-color: var(--color-border-3);
+    transition: 0.3s;
+}
+/* Right Page (logo image Page ) */
+#hero .rightPage img,
+#heroAdd .rightPage img{
+    width: 300px;
+    position: relative;
+    right: -1000px;
+}
+/* Footer Page  */
+.footer{
+    position: relative;
+    right: -10000px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-white-3);
+}
+.footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    padding-right: 200px;
+}
+.footer ul li{
+    margin: 0 9px;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: #8f94a8;
+}
+.lang{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #8f94a8;
+}
+/* Sign Up Page  */
+#hero-signup{
+    width: 100%;
+    height: 120vh;
+    background-color: var(--login-color-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 15px 0;
+}
+#hero-signup .signup{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    border-radius: 10px;
+}
+#hero-signup .signup .signupInf{
+    width: 460px;
+    padding: 44px 39px 44px;
+}
+#hero-signup .signup .signupInf img{
+    width: 70px;
+}
+#hero-signup .signup .signupInf .par{
+    margin-bottom: 40px;
+}
+#hero-signup .closeUpBtn{
+    position: absolute;
+    top: 14px;
+    left: 26px;
+}
+#heroAdd .closeSiBtn{
+    position: absolute;
+    top: 14px;
+    left: 26px;
+}
+/* Circles */
+.circle{
+    width: 100%;
+    display: flex;
+}
+.circle .active{
+    width: 25px;
+    border-radius: 50px;
+    background-color: #22d187;
+    margin-bottom: 25px;
+}
+.circle span{
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #d9d9d9;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+#hero-signup .signup .signupInf .inform{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border: 2px solid rgba(0, 0, 0, .1);
+    border-radius: 3px;
+    outline: none;
+}
+#hero-signup .signup .signupInf .inform label{
+    position: absolute;
+    z-index: 100;
+    margin-right: 15px;
+    font-size: 14px;
+    margin-top: 9px;
+}
+#hero-signup .signup .signupInf .inform input{
+    position: relative;
+    padding: 36px 20px 8px;
+    border: none;
+    outline: none;
+    transition-duration: 0.2s;
+}
+#hero-signup .signup .signupInf .inform input:hover,
+#hero-signup .signup .signupInf .inform input:focus{
+    background-color: #F0F2F5;
+    border-bottom: 3px solid#67c1f4;
+    transition: 0.2s;
+}
+#hero-signup .signup .signupImg img{
+    border-radius: 10px;
+    height: 109vh;
+    width: 100%;
+}
+#hero-signup .signup .signupInf form label{
+    font-size: 13px;
+}
+#hero-signup .signup .signupInf form a{
+    color: var(--color-link);
+}
+#hero-signup .signup .signupInf .signup-btn input{
+    height: 65px;
+    width: 200px;
+    text-align: center;
+    display: block;
+    background: var(--color-button-blue);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-white);
+    font-family: roboto, sans-serif;
+    border-radius: 5px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+#hero-signup .signup .signupInf .signup-btn input:hover{
+    background-color: var(--color-border-3);
+    transition: 0.3s;
+}
+#hero-signup .signup .signupInf .sinInAgain{
+    width: 100%;
+    margin-top: 20px;
+}
+#hero-signup .signup .signupInf .sinInAgain p{
+    font-size: 13px;
+}
+#hero-signup .signup .signupInf .sinInAgain a{
+    color: var(--color-link);
+}
+/* Start index.html Page */
+/* righ Page */
+#main{
+    width: 100%;
+    background-color: var(--color-white-3);
+}
+  /* Onclick Any Photo in this site     */
+#main .onclick-img{
+    z-index: 10000;
+    background: 
+    linear-gradient(to top,
+    rgba(0,0,0,.85) 0%,
+    rgba(0,0,0,.3) 50%,
+    rgba(0,0,0,.15) 65%,
+    rgba(0,0,0,.075) 75.5%,
+    rgba(0,0,0,.037) 82.85%,
+    rgba(0,0,0,.019) 88%,
+    rgba(0,0,0,0) 100%);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#main .onclick-img .smallX{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 12px;
+    right: 30px;
+}
+#main .onclick-img small{
+    background-color: black;
+    width: 20px;
+    color: var(--color-white);
+    padding: 10px;
+    cursor: pointer;
+}
+#main .onclick-img img{
+    width: 44%;
+}
+#main .onload-logo{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main .onload-logo img{
+    width: 100px;
+    transition-duration: 1s;
+    animation-name: onloadLogo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes onloadLogo {
+    0%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+#main .all-main{
+    padding: 20px 20px 0;
+    min-height: 96vh;
+    display: none;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+#main .all-main .pro-no-sea ,
+#main .all-main .more{
+    padding: 15px;
+    width: 100%;
+    background-color: var(--color-white);
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+#main .all-main .rightPgeMain{
+    width: 18%;
+    height: fit-content;
+    border-radius: 15px;
+    flex-basis: 18%;
+    -moz-transition: left .5s;
+    -o-transition: left .5s;
+    -webkit-transition: left .5s;
+    transition: left .5s;
+    z-index: 1000;
+    position: sticky;
+    top: -15px;
+    margin-left: 20px;
+    margin-top: -15px;
+    padding: 15px;
+}
+#main .all-main .rightPgeMain .pro-no-sea div,
+#main .all-main .rightPgeMain .more div{
+    margin-bottom: 15px;
+}
+#main .all-main .rightPgeMain .more .hidden-more {
+    display: block;
+}
+#main .all-main .rightPgeMain .more .hidden-more div:hover i ,
+#main .all-main .rightPgeMain .more .hidden-more div:hover a ,
+#main .all-main .rightPgeMain .more .less-inf:hover i ,
+#main .all-main .rightPgeMain .more .less-inf:hover a{
+    color: var(--color-border-3);
+    transition: 0.1s;
+}
+#main .all-main .rightPgeMain .more .hidden-more div:focus i ,
+#main .all-main .rightPgeMain .more .hidden-more div:focus a ,
+#main .all-main .rightPgeMain .more .less-inf:focus i ,
+#main .all-main .rightPgeMain .more .less-inf:focus a{
+    color: var(--color-border-3);
+    transition: 0.1s;
+}
+/* #main .all-main .rightPgeMain .pro-no-sea .personal-note:focus 
+#main .all-main .rightPgeMain .pro-no-sea .personal-note a{
+    color: var(--color-border-3);
+    transition: 0.2s;
+} */
+#main .all-main .rightPgeMain .add-tadweena{
+    width: 100%;
+}
+#main .all-main .rightPgeMain .add-tadweena button{
+    width: 110%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--color-border-1);
+    color: var(--color-white);
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 1000;
+}
+#main .all-main .rightPgeMain
+.add-tadweena button:hover{
+    background-color: var(--color-border-3);
+    transition-duration: 0.2s;
+}
+#main .arrow-up{
+    display: none;
+    position: fixed;
+    bottom: 44px;
+    right: 100px;
+    z-index: 100000;
+}
+#main .arrow-up i{
+    background-color: var(--color-border-1);
+    border-radius: 50%;
+    padding: 17px;
+    color: var(--color-white);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+#main .arrow-up i:hover{
+    color: var(--color-white-3);
+    background-color: var(--color-border-3);
+    transform: translateY(-15px);
+    transition-duration: 0.3s;
+}
+/* New Tadweena  */
+#main .new-tadween{
+    display: none;
+    position: fixed;
+    bottom: 76px;
+    left: 100px;
+    z-index: 10000;
+}
+#main .new-tadween img{
+    border-radius: 50%;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    width: 50px;
+    height: 50px;
+    padding: 6px 2px 2px 5px;
+}
+#main .allBoxNewTad{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: rgb(0 0 0 / 28%);
+    z-index: 100000;
+    position: fixed;
+    right: -10000px;
+    transition-duration: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main .boxNewTad{
+    width: 580px;
+    padding: 15px;
+    margin: 0px;
+    background-color: var(--color-white);
+}
+#main #boxNewHead{
+    width: 600px;
+    margin-right: 20px;
+}
+#main .boxNewTad .header-box{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-white-7);
+    padding: 10px;
+}
+#main .boxNewTad .header-box h4{
+    color: #9c9a9a;
+}
+#main .boxNewTad .header-box span{
+    cursor: pointer;
+}
+#main .boxNewTad .header-box span:hover{
+    color: var(--color-border-3);
+    transition-duration: 0.2s;
+}
+#main .boxNewTad .centerImgInp{
+    display: flex;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+#main .boxNewTad .centerImgInp img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+#main .boxNewTad .centerImgInp textarea{
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    resize: none;
+    min-height: 70px;
+    max-height: 400px;
+    width: 400px;
+    font-size: 18px;
+    background-color: transparent;
+}
+#main .boxNewTad .center-icon-number{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid var(--color-white-7);
+    padding-bottom: 15px;
+    padding-right: 10px;
+}
+#main .boxNewTad .center-icon{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+#main .boxNewTad .center-icon i{
+    margin-left: 15px;
+    cursor: pointer;
+    color: var(--color-border-3);
+}
+#main .boxNewTad .center-icon i:hover{
+    color: var(--color-border-3);
+    transition-duration: 0.2s;
+}
+#main .boxNewTad .center-icon-number small{
+    color: #9c9a9a;
+}
+#main .boxNewTad .footer-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 15px;
+}
+#main .boxNewTad .footer-box ul{
+    list-style: none;
+}
+#main .boxNewTad .footer-box ul li,
+#main .boxNewTad .footer-box ul li i{
+    color: #9c9a9a;
+    padding-right: 10px;
+}
+#main .boxNewTad .footer-box button{
+    background-color: var(--color-border-1);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+#main .boxNewTad .footer-box button:hover{
+    background-color: var(--color-border-3);
+    transition-duration: 0.2s;
+}
+
+
+/* navbar (Ipad & Labtop)  */
+#main .nav{
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--color-white);
+    border-radius: 15px;
+    display: none;
+}
+#main .allList{
+    position: fixed;
+    z-index: 1000000;
+    right: -10000px;
+    top: 0;
+    width: 100%;
+    background: transparent;
+}
+#main .list-nav{
+    transition-duration: 0.4s;
+    z-index: 10000;
+    width: 180px;
+    height: 100vh;
+    border-radius: 15px;
+    padding-left: 35px;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    overflow: hidden scroll;
+}
+#main .list-nav .topUserPro{
+    margin-right: 15px;
+    margin-top: 30px;
+    border-bottom: 1px solid var(--color-white-7);
+    padding-bottom: 30px;
+}
+#main .list-nav .topUserPro i{
+    cursor: pointer;
+}
+#main .list-nav .topUserPro i:hover{
+    color: var(--color-border-3);
+    transition-duration: 0.2s;
+}
+#main .list-nav .topUserPro img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+#main .list-nav .topUserPro h4{
+    font-size: 13px;
+    color: var(--color-black-1);
+    margin-left: 10px;
+}
+#main .list-nav .following-foll {
+    display: flex;
+    width: 100%;
+    margin-top: 8px;
+}
+#main .list-nav i{
+    color: var(--color-border-3) !important;
+}
+#menu-mob{
+    display: none;
+}
+#main .nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+#main .nav ul li{
+    margin-right: 10px;
+    cursor: pointer;
+}
+#main .nav ul li i:hover{
+    color: var(--color-border-3);
+    transition-duration: 0.2s;
+}
+#main .list-nav ul{
+    padding: 20px 15px;
+}
+#main .list-nav span{
+    position: relative;
+    right: 183px;
+    top: 20px;
+    cursor: pointer;
+}
+#main .list-nav span:hover{
+    color: var(--color-border-3);
+    transition-duration: 0.2s;
+}
+#main .list-nav ul li{
+    margin-bottom: 30px;
+    font-weight: normal;
+    cursor: pointer;
+    list-style: none;
+}
+#main .list-nav ul li:hover{
+    transition-duration: 0.2s;
+    color: var(--color-border-3);
+}
+#main .list-nav ul li:hover i{
+    color: var(--color-border-3);
+    transition-duration: 0.2s;
+}
+#main .underMoreList{
+    margin-top: -15px;
+}
+#main .underMoreList ul{
+    list-style: none;
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 10px;
+}
+#main .underMoreList ul li{
+    margin-left: 15px;
+    margin-bottom: 3px;
+    color: var(--color-white-5);
+}
+#main .underMoreList select{
+    background-color: transparent;
+    padding: 7px 54px;
+    font-size: 18px;
+    border: 1px solid #6b70816b;
+}
+#main .underMoreList h6{
+    font-size: 14px;
+    color: var(--color-white-5);
+}
+/* Edit Profile */
+#main .all-main .center-editPro .backEdit img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    position: relative;
+    cursor: pointer;
+}
+/* #main .all-main .center-editPro .backEdit i{
+    position: absolute;
+    top: 33%;
+    right: 46%;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+} */
+#main .all-main .center-editPro .mainEdit img{
+    width: 100px;
+    position: relative;
+    top: -70px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid var(--color-white);
+    cursor: pointer;
+    margin-right: 20px;
+}
+/* #main .all-main .center-editPro .mainEdit i{
+    position: absolute;
+    top: 310px;
+    right: 260px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+} */
+#main .all-main .center-editPro form{
+    width: 95%;
+    margin: auto;
+}
+#main .all-main .center-editPro form input{
+    border: none;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 0 5px;
+    outline: none;
+    font-size: 16px;
+}
+#main .all-main .center-editPro form input:focus{
+    border: none;
+    border-bottom: 1px solid var(--color-border-1);
+}
+#main .all-main .center-editPro .saveEdit{
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-color: var(--color-border-1);
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+}
+#main .all-main .rightPgeMain .more i,
+#main .all-main .rightPgeMain .pro-no-sea i{
+    margin-left: 15px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    color: var(--color-border-3);
+}
+#main .all-main .rightPgeMain a{
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+#ch:checked{
+    background-color: green;
+}
+/* Start choose imgage Include */
+.chooseImg{
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 10000;
+    background: #6e68687a;
+}
+.chooseImg .boxChoose{
+    width: 200px;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 3px 0px;
+    border-radius: 5px;
+}
+.chooseImg .boxChoose input{
+    display: none;
+}
+.chooseImg .boxChoose label{
+    padding: 5px 9px 5px 50px;
+    cursor: pointer;
+}
+.chooseImg .boxChoose label:hover{
+    background-color: #eee;
+    transition: 0.3s;
+}
+/* Start Add Another User  */
+#main .all-main .infUserRightPage{
+    padding: 10px;
+}
+#main .all-main .infUserRightPage .img-anotherAcc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#main .all-main .infUserRightPage
+.img-anotherAcc img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+} 
+#main .all-main .infUserRightPage
+.img-anotherAcc i{
+    border: 10px;
+    border-radius: 50%;
+}
+#main .all-main .infUserRightPage span{
+    color: var(--color-black-1);
+    font-size: 13px;
+}
+#main .all-main .allAddAnoterAcc{
+    position: fixed;
+    z-index: 100000000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    bottom: -3000px;
+}
+#main .all-main .addAnotherAccBox{
+    background-color: var(--color-white);
+    width: 25%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+#main .all-main .addAnotherAccBox small{
+    cursor: pointer;
+}
+#main .all-main .addAnotherAccBox small:hover{
+    color: var(--color-border-3);
+    transition-duration: 0.2s;
+}
+#main .all-main .addAnotherAccBox 
+.addAnotherInf{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px 0;
+}
+#main .all-main .addAnotherAccBox 
+.addAnotherInf:hover{
+    transition-duration: 0.2s;
+}
+#main .all-main .addAnotherAccBox 
+.addAnotherInf .leftAddAnotherInf{
+    display: flex;
+}
+#main .all-main .addAnotherAccBox 
+.addAnotherInf .leftAddAnotherInf img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+#main .all-main .addAnotherAccBox 
+.addAnotherInf .leftAddAnotherInf span{
+    color: var(--color-black-1);
+    font-size: 13px;
+}
+#main .all-main .addAnotherAccBox .addAnotherBtn{
+    display: flex;
+    flex-direction: column;
+}
+#main .all-main .addAnotherAccBox input:checked{
+    border-color: green;
+    background-color: green;
+}
+#main .all-main .addAnotherAccBox button{
+    background-color: var(--color-border-1);
+    border-radius: 50px;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: var(--color-white);
+}
+#main .all-main .addAnotherAccBox button:hover{
+    background-color: var(--color-border-3);
+    transition-duration: 0.2s;
+}
+/* End Add Another User  */
+
+/* Center Page */
+#main .all-main .centerPgeMain {
+    display: block;
+}
+#main .all-main .center-userAcc {
+    display: none;
+    width: 650px;
+}
+#main .all-main .center-user-media {
+    display: none;
+}
+#main .all-main .center-user-like {
+    display: none;
+}
+#main .all-main .center-anotherUser {
+    display: none;
+    width: 650px;
+}
+#main .all-main .centerNotification {
+    display: none;
+    min-height: 91vh;
+}
+#main .all-main .centerMessage {
+    display: none;
+    min-height: 91vh;
+}
+#main .all-main .centerSearch {
+    display: none;
+    width: 630px;
+    min-height: auto;
+}
+#main .all-main .center-settAccount {
+    display: none;
+}
+#main .all-main .center-updateAcc {
+    display: none;
+}
+#main .all-main .center-emailAcc {
+    display: none;
+}
+#main .all-main .center-UrlAcc {
+    display: none;
+}
+#main .all-main .center-CvAcc {
+    display: none;
+}
+#main .all-main .center-genderAcc {
+    display: none;
+}
+#main .all-main .center-passAcc {
+    display: none;
+}
+#main .all-main .center-LangAcc {
+    display: none;
+}
+#main .all-main .center-ChanCounrAcc {
+    display: none;
+}
+#main .all-main .center-ChanCityAcc {
+    display: none;
+}
+#main .all-main .center-ChanVeriAcc {
+    display: none;
+}
+#main .all-main .center-ChanPrivrAcc {
+    display: none;
+}
+#main .all-main .center-ChanotiAcc {
+    display: none;
+}
+#main .all-main .center-ChanInfAcc {
+    display: none;
+}
+#main .all-main .center-ChanDeleteAcc {
+    display: none;
+}
+#main .all-main .centerMar {
+    display: none;
+}
+#main .all-main .center-foodAccount {
+    display: none;
+}
+#main .all-main .center-Sugges {
+    display: none;
+}
+#main .all-main .center-followAdd {
+    display: none;
+}
+#main .all-main .center-followingAdd {
+    display: none;
+}
+.showComment{
+    display: none;
+}
+#main .all-main .centerGift{
+    display: none;
+}
+#main .all-main .center-editPro{
+    display: none;
+    width: 650px;
+}
+#centerUserLike{
+    display: block;
+}
+#main .all-main .center-dardasha{
+    background: white;
+    margin-right: 20px;
+    height: 95vh;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+#main .all-main .center-dardasha .header{
+    z-index: 100;
+    width: 600px;
+    border-radius: 15px 15px 0 0;
+    background-color: var(--color-white);
+    min-width: 600px;
+    -moz-transition: left .5s;
+    -o-transition: left .5s;
+    -webkit-transition: left .5s;
+    transition: left .5s;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 3px 6px -7px;
+}
+#main .all-main .center-dardasha .header div{
+    display: flex;
+    margin-right: 30px;
+}
+#main .all-main .center-dardasha .header img{
+    width: 30px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+#main .all-main .center-dardasha .header h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+#main .all-main .center-dardasha .space-dard{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 30px;
+}
+#main .all-main .center-dardasha i{
+    cursor: pointer;
+}
+#main .all-main .center-dardasha .space-dard .inf-acc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#main .all-main .center-dardasha .space-dard .inf-acc img{
+    width: 50px;
+    border-radius: 50%;
+}
+#main .all-main .center-dardasha .space-dard .inf-acc span{
+    direction: ltr;
+    font-size: 14px;
+    font-weight: 100;
+}
+#main .all-main .center-dardasha .space-dard .inf-acc h3{
+    font-size: 18px;
+    font-weight: 400;
+}
+#main .all-main .center-dardasha .space-dard .inf-acc h4{
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+#main .all-main .center-dardasha .space-dard h2{
+    font-size: 15px;
+    font-weight: 400;
+    background: var(--color-button-blue);
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    border-radius: 10px 10px 10px 0;
+    margin-bottom: 10px;
+}
+#main .all-main .center-dardasha .space-dard .your-box{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+#main .all-main .center-dardasha .space-dard .your-box img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 7px;
+
+}
+#main .all-main .center-dardasha .space-dard .your-box h2{
+    font-size: 15px;
+    font-weight: 400;
+    background: var(--color-border-3);
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    border-radius: 0px 10px 10px 10px;
+    margin: 10px 0;   
+}
+#main .all-main .center-dardasha .mess-between{
+    width: 90%;
+    margin: 20px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    padding-bottom: 24px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#main .all-main .center-dardasha .mess-between span{
+    font-size: 10px;
+    font-weight: 100;
+    font-family: auto;
+}
+#main .all-main .center-dardasha .input-all{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+}
+#main .all-main .center-dardasha .input-all #send-dar{
+    margin-left: 5px;
+}
+#main .all-main .center-dardasha .input-all .send-btn{
+    width: fit-content;
+    margin-bottom: 0;
+}
+#main .all-main .center-dardasha .input-all .send-btn i{
+    padding: 7px;
+    border-radius: 50%;
+    background: var(--color-border-3);
+    color: white;
+    cursor: pointer;
+}
+/* #main .all-main .center-dardasha .fa-smile{
+    display: flex;
+    justify-content: space-between;
+} */
+#main .all-main .center-dardasha input[type='file']{
+    display: none;
+}
+#main .all-main .center-dardasha .fa-camera{
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    top: 11px;
+    right: 10px;
+}
+#main .all-main .center-dardasha .space-dard form{
+    width: 87%;
+    position: relative;
+}
+#main .all-main .center-dardasha .space-dard input[type='text']{
+    width: 95%;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: #eee;
+    padding: 10px 35px 10px 0;
+    font-size: 16px;
+    caret-color: var(--color-button-blue);
+}
+#main .all-main .center-dardasha .fa-smile{
+    position: absolute;
+    cursor: pointer;
+    left: 0px;
+    top: 11px;
+}
+#main .all-main .centerPgeMain .header ,
+#main .all-main .center-userAcc .header,
+#main .all-main .center-user-media .header,
+#main .all-main .center-anotherUser .header,
+#main .all-main .centerNotification .header,
+#main .all-main .centerMessage .header,
+#main .all-main .center-settAccount .header,
+#main .all-main .center-updateAcc .header,
+#main .all-main .center-emailAcc .header,
+#main .all-main .center-UrlAcc .header,
+#main .all-main .center-CvAcc .header,
+#main .all-main .center-genderAcc .header,
+#main .all-main .center-passAcc .header,
+#main .all-main .center-LangAcc .header,
+#main .all-main .center-ChanCounrAcc .header,
+#main .all-main .center-ChanCityAcc .header,
+#main .all-main .center-ChanVeriAcc .header,
+#main .all-main .center-ChanPrivrAcc .header,
+#main .all-main .center-ChanotiAcc .header,
+#main .all-main .center-ChanInfAcc .header,
+#main .all-main .center-ChanDeleteAcc .header,
+#main .all-main .centerMar .header,
+#main .all-main .center-foodAccount .header,
+#main .all-main .center-Sugges .header,
+#main .all-main .center-followAdd .header,
+#main .all-main .center-followingAdd .header,
+#main .all-main .showComment .header,
+#main .all-main .centerGift .header,
+#main .all-main .center-editPro .header {
+    z-index: 100;
+    width: 600px;
+    border-radius: 15px 15px 0 0;
+    background-color: var(--color-white);
+    min-width: 600px;
+    -moz-transition: left .5s;
+    -o-transition: left .5s;
+    -webkit-transition: left .5s;
+    transition: left .5s;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+#main .all-main .centerSearch .header{
+    z-index: 100;
+    width: 581px;
+    border-radius: 15px 15px 0 0;
+    background-color: var(--color-white);
+    min-width: 581px;
+    -moz-transition: left .5s;
+    -o-transition: left .5s;
+    -webkit-transition: left .5s;
+    transition: left .5s;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    transition-duration: 0.4s;
+}
+#main .all-main .centerPgeMain .header i,
+#main .all-main .center-userAcc .header i,
+#main .all-main .center-user-media .header i,
+#main .all-main .center-anotherUser .header i,
+#main .all-main .centerNotification .header i,
+#main .all-main .centerMessage .header i,
+#main .all-main .centerSearch .header i,
+#main .all-main .center-settAccount .header i,
+#main .all-main .center-updateAcc .header i,
+#main .all-main .center-emailAcc .header i,
+#main .all-main .center-UrlAcc .header i,
+#main .all-main .center-CvAcc .header i,
+#main .all-main .center-genderAcc .header i,
+#main .all-main .center-passAcc .header i,
+#main .all-main .center-LangAcc .header i,
+#main .all-main .center-ChanCounrAcc .header i,
+#main .all-main .center-ChanCityAcc .header i,
+#main .all-main .center-ChanVeriAcc .header i,
+#main .all-main .center-ChanPrivrAcc .header i,
+#main .all-main .center-ChanotiAcc .header i,
+#main .all-main .center-ChanInfAcc .header i,
+#main .all-main .center-ChanDeleteAcc .header i,
+#main .all-main .centerMar .header i,
+#main .all-main .center-foodAccount .header i,
+#main .all-main .center-Sugges .header i,
+#main .all-main .center-followAdd .header i,
+#main .all-main .center-followingAdd .header i,
+#main .all-main .showComment .header i,
+#main .all-main .centerGift .header i,
+#main .all-main .center-editPro .header i{
+    cursor: pointer;
+}
+#main .all-main .centerPgeMain .header i:hover,
+#main .all-main .center-userAcc .header i:hover,
+#main .all-main .center-user-media .header i:hover,
+#main .all-main .center-anotherUser .header i:hover,
+#main .all-main .centerNotification .header i:hover,
+#main .all-main .centerMessage .header i:hover,
+#main .all-main .centerSearch .header i:hover,
+#main .all-main .center-settAccount .header i:hover,
+#main .all-main .center-updateAcc .header i:hover,
+#main .all-main .center-emailAcc .header i:hover,
+#main .all-main .center-UrlAcc .header i:hover,
+#main .all-main .center-CvAcc .header i:hover,
+#main .all-main .center-genderAcc .header i:hover,
+#main .all-main .center-passAcc .header i:hover,
+#main .all-main .center-LangAcc .header i:hover,
+#main .all-main .center-ChanCounrAcc .header i:hover,
+#main .all-main .center-ChanCityAcc .header i:hover,
+#main .all-main .center-ChanVeriAcc .header i:hover,
+#main .all-main .center-ChanPrivrAcc .header i:hover,
+#main .all-main .center-ChanotiAcc .header i:hover,
+#main .all-main .center-ChanInfAcc .header i:hover,
+#main .all-main .center-ChanDeleteAcc .header i:hover,
+#main .all-main .centerMar .header i:hover,
+#main .all-main .center-foodAccount .header i:hover,
+#main .all-main .center-Sugges .header i:hover,
+#main .all-main .center-followAdd .header i:hover,
+#main .all-main .center-followingAdd .header i:hover,
+#main .all-main .showComment .header i:hover,
+#main .all-main .centerGift .header i:hover,
+#main .all-main .center-editPro .header i:hover{
+    color: var(--color-border-3);
+
+}
+#main .all-main .centerPgeMain .header img,
+#main .all-main .center-userAcc .header img,
+#main .all-main .center-user-media .header img,
+#main .all-main .center-anotherUser .header img,
+#main .all-main .centerNotification .header img,
+#main .all-main .centerMessage .header img,
+#main .all-main .centerSearch .header img,
+#main .all-main .center-settAccount .header img,
+#main .all-main .center-updateAcc .header img,
+#main .all-main .center-emailAcc .header img,
+#main .all-main .center-UrlAcc .header img,
+#main .all-main .center-CvAcc .header img,
+#main .all-main .center-genderAcc .header img,
+#main .all-main .center-passAcc .header img,
+#main .all-main .center-LangAcc .header img,
+#main .all-main .center-ChanCounrAcc .header img,
+#main .all-main .center-ChanCityAcc .header img,
+#main .all-main .center-ChanVeriAcc .header img,
+#main .all-main .center-ChanPrivrAcc .header img,
+#main .all-main .center-ChanotiAcc .header img,
+#main .all-main .center-ChanInfAcc .header img,
+#main .all-main .center-ChanDeleteAcc .header img,
+#main .all-main .centerMar .header img,
+#main .all-main .center-foodAccount .header img,
+#main .all-main .center-Sugges .header img,
+#main .all-main .center-followAdd .header img,
+#main .all-main .center-followingAdd .header img,
+#main .all-main .showComment .header img,
+#main .all-main .centerGift .header img,
+#main .all-main .center-editPro .header img{
+    width: 40px;
+    cursor: pointer;
+}
+#main .all-main .centerPgeMain .header a,
+#main .all-main .center-userAcc .header a ,
+#main .all-main .center-user-media .header a,
+#main .all-main .center-anotherUser .header a,
+#main .all-main .centerNotification .header a,
+#main .all-main .centerMessage .header a,
+#main .all-main .centerSearch .header a,
+#main .all-main .center-settAccount .header a,
+#main .all-main .center-updateAcc .header a,
+#main .all-main .center-emailAcc .header a,
+#main .all-main .center-UrlAcc .header a,
+#main .all-main .center-CvAcc .header a,
+#main .all-main .center-genderAcc .header a,
+#main .all-main .center-passAcc .header a,
+#main .all-main .center-LangAcc .header a,
+#main .all-main .center-ChanCounrAcc .header a,
+#main .all-main .center-ChanCityAcc .header a,
+#main .all-main .center-ChanVeriAcc .header a,
+#main .all-main .center-ChanPrivrAcc .header a,
+#main .all-main .center-ChanotiAcc .header a,
+#main .all-main .center-ChanInfAcc .header a,
+#main .all-main .center-ChanDeleteAcc .header a,
+#main .all-main .centerMar .header a,
+#main .all-main .center-foodAccount .header a,
+#main .all-main .showComment .header a,
+#main .all-main .centerGift .header a{
+    text-decoration: none;
+    color: black;
+}
+#main .all-main .food-pre,
+#main .all-main .more-noti{
+    display: none;
+    background: var(--color-white);
+    width: 250px;
+    position: fixed;
+    margin-top: 50px;
+    margin-right: 20px;
+    border-radius: 15px;
+    padding: 5px 15px;
+    box-shadow: var(--box-shadow);
+}
+#main .all-main .food-pre .one-f,
+#main .all-main .more-noti .one-f{
+    padding: 10px;
+    transition: 0.2s;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+/* #main .all-main .food-pre .one-f:hover,
+#main .all-main .more-noti .one-f:hover{
+    background-color: var(--color-white-3);
+    transition: 0.2s;
+} */
+#main .all-main .food-pre .one-f div,
+#main .all-main .more-noti .one-f div{
+    display: flex;
+}
+#main .all-main .food-pre h3,
+#main .all-main .more-noti h3{
+    font-size: 15px;
+    font-weight: normal;
+    margin-right: 10px;
+}
+/* Onload Under main  */
+#main .onload-under-main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+#main .onload-under-main img{
+    width: 50px;
+    animation-name: onloadMain;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes onloadMain {
+0%{
+    transform: translateX(50px);
+}
+100%{
+    transform: translateX(0px);
+}
+}
+#peopleCard{
+    display: none;
+}
+#peopleCard2{
+    display: block;
+}
+/* Start center page (main)  */
+#main .people-card{
+    width: 600px;
+    padding: 15px;
+    background-color: var(--color-white);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 12px 21px 12px 0;
+}
+#main .people-cardMove{
+    width: 60%;
+    height: 130px;
+    border: 1px solid var(--color-white-7);
+    overflow: hidden;
+    padding: 15px;
+    background-color: var(--color-white);
+    border-radius: 15px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 12px 21px 12px 0;
+}
+#main .people-cardMove #closeIqtebas{
+    margin-bottom: 6px;
+    margin-top: -7px;
+}
+.replayPost{
+    background-color: transparent;
+    margin: 0 30px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.replayPost span{
+    font-size: 14px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+.replayPost i{
+    color: green;
+    margin-right: 10px;
+}
+#main .people-card .header-card-inf,
+#main .people-cardMove .header-card-inf{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+/* If Onclick Image Button */
+.img-icon{
+    width: 55%;
+    height: 250px;
+    border-radius: 15px;
+    margin: 12px 21px 12px 0;
+    position: relative;
+}
+.img-icon span{
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+.img-icon img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+#main .all-main .user-inf{
+    display: flex;
+    width: fit-content;
+}
+#main .all-main .user-inf img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#main .all-main .user-inf h4 {
+    font-weight: normal;
+    cursor: pointer;
+}
+#main .all-main .user-inf span{
+    font-weight: normal;
+    color: #8f94a8;
+    cursor: pointer;
+}
+#main .all-main .centerPgeMain .header-card-inf .more-user i,
+#main .all-main .centerMar .header-card-inf .more-user i{
+    cursor: pointer;
+}
+#main .all-main .centerPgeMain .header-card-inf .more-user i:hover,
+#main .all-main .centerMar .header-card-inf .more-user i:hover{
+    color: var(--color-border-3);
+    transition-duration: 0.2s;
+}
+#main .all-main .people-card .center-card p,
+#main .all-main .people-card .center-card p,
+#main .all-main .people-cardMove .center-card p{
+    font-weight: normal;
+    margin: 15px 10px 20px;
+}
+#main .all-main .people-card .center-card span,
+#main .all-main .people-cardMove .center-card span{
+    font-weight: normal;
+    font-size: 13px;
+    user-select: none;
+}
+#main .all-main .people-card .center-card  img,
+#main .all-main .people-cardMove .center-card img{
+    width: 100%;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#main .all-main .people-card .interaction ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 15px;
+}
+#main .all-main .people-card .interaction 
+.rotate-tad{
+    width: 144px;
+    padding: 12px 25px;
+    background-color: var(--color-white);
+    position: absolute;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    display: none;
+    z-index: 10000000;
+}
+#main .all-main .people-card .interaction span{
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    cursor: pointer;
+}
+.rotate-tad.open{
+    display: block;
+}
+#main .all-main .people-card .interaction 
+.rotate-tad ul{
+    list-style: none;
+    display: block;
+}
+#main .all-main .people-card .interaction li{
+    cursor: pointer;
+}
+#main .all-main .people-card .interaction ul i{
+    color: #a0b3d4;
+    margin: 0 5px;
+}
+/* #main .all-main .people-card .interaction ul i:focus{
+    color: red !important;
+} */
+#main .all-main .people-card .interaction 
+.rotate-tad ul li{
+    padding: 2px;
+    width: 120px;
+    cursor: pointer;
+}
+#main .all-main .people-card .interaction 
+.rotate-tad ul li:hover{
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+/* #main .all-main .people-card .interaction ul i:hover{
+    color: red;
+    transition-duration: 0.2s;
+} */
+#main .all-main .people-card .interaction #rotate:hover{
+    color: green;
+    transition-duration: 0.2s;
+}
+.centerImg{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 10000;
+    background-color: #10101080;
+    top: 0;
+}
+.centerImg div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centerImg span{
+    position: absolute;
+    top: 6px;
+    left: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--color-white);
+}
+.centerImg img{
+    width: 440px;
+}
+/* End center page (main)  */
+/* Start center page (User Account)  */
+.center-userAcc i,
+.center-anotherUser i{
+    cursor: pointer;
+}
+.center-userAcc i:hover,
+.center-anotherUser i:hover{
+    color: var(--color-border-3);
+    transition-duration: 0.2s;
+}
+.center-userAcc .profile-inf,
+.center-anotherUser .profile-inf,
+.center-editPro .profile-inf{
+    width: 629px;
+    margin-right: 20px;
+    background-color: var(--color-white);
+}
+.center-userAcc .profile-inf img,
+.center-anotherUser .profile-inf img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    position: relative;
+    cursor: pointer;
+}
+.center-userAcc .profile-inf .under-backPro,
+.center-anotherUser .profile-inf .under-backPro{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 50px;
+}
+.center-userAcc .profile-inf .under-backPro 
+.left-under-backPro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+}
+.center-anotherUser .profile-inf .under-backPro 
+.left-under-backPro{
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    height: fit-content;
+    align-items: center
+}
+.center-userAcc .profile-inf .under-backPro 
+.left-under-backPro button,
+.center-anotherUser .profile-inf .under-backPro 
+.left-under-backPro button{
+    padding: 8px 15px;
+    background-color: var(--color-border-1);
+    border-radius: 50px;
+    border: 1px solid var(--color-border-1);
+    color: var(--color-white);
+    cursor: pointer;
+}
+.center-userAcc .profile-inf .under-backPro 
+.left-under-backPro button:hover,
+.center-anotherUser .profile-inf .under-backPro 
+.left-under-backPro button:hover{
+    color: var(--color-white);
+    background-color: var(--color-border-1);
+    border: 1px solid var(--color-border-1);
+    transition-duration: 0.2s;
+}
+.center-userAcc .profile-inf .under-backPro 
+.left-under-backPro i{
+    margin-left: 7px;
+}
+.center-userAcc .profile-inf .under-backPro 
+.left-under-backPro i:hover,
+.center-anotherUser .profile-inf .under-backPro 
+.left-under-backPro i:hover{
+    color: var(--color-border-3);
+    transition-duration: 0.2s;
+}
+.center-userAcc .profile-inf .under-backPro 
+.left-under-backPro #sett-pro,
+.center-anotherUser .profile-inf .under-backPro 
+.left-under-backPro #sett-pro{
+    color: var(--color-border-1);
+}
+.center-userAcc .profile-inf .under-backPro 
+.left-under-backPro #editProfile{
+    padding: 5px 10px;
+    border: 1px solid var(--color-border-1);
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    background-color: white;
+    color: black;
+}
+.center-userAcc .profile-inf .under-backPro 
+.left-under-backPro #editProfile:hover{
+    background-color: var(--color-border-1);
+    transition: 0.3s;
+    color: white;
+}
+.center-userAcc .profile-inf .under-backPro 
+.img-profile img,
+.center-anotherUser .profile-inf .under-backPro 
+.img-profile img{
+    width: 100px;
+    position: relative;
+    top: -70px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid var(--color-white);
+    cursor: pointer;
+}
+
+/* waiting Following Page  */
+.allWaitingBox{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 130vh;
+    position: fixed;
+    z-index: 100000;
+}
+.waitingBox{
+    padding: 15px;
+    width: 300px;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+}
+.waitingBox h3{
+    margin-bottom: 10px;
+}
+.waitingBox .closeBtn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.waitingBox p {
+    font-size: 13px;
+    width: 230px;
+    color: var(--color-black-1);
+}
+.waitingBox .closeBtn button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: transparent;
+    font-size: 18px;
+}
+/*  */
+.allBlock{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 10000;
+}
+.allBlock .blockUSerBox{
+    background-color: var(--color-white);
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    width: 300px;
+    padding: 20px;
+}
+.allBlock .blockUSerBox p{
+    color: var(--color-black-1);
+    font-size: 15px;
+    margin: 11px 0;
+    line-height: 28px;
+}
+.allBlock .blockUSerBox div{
+    display: flex;
+    justify-content: flex-end;
+}
+.allBlock .blockUSerBox div button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-right: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* Setting Account List */
+
+.settAccBox{
+    padding: 10px;
+    width: 145px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    margin-right: 400px;
+    margin-top: -15px;
+    display: none;
+    position: absolute;
+}
+.settAccBox h3:hover{
+    background-color: var(--color-white-3);
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+.settAccBox h3{
+    margin-bottom: 5px;
+    font-size: 16px;
+    padding: 10px 0;
+}
+.followers-more{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+.followers-more .center-foll{
+    padding: 0 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#messShowBlock{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+#messShowBlock p{
+    font-size: 14px;
+    color: var(--color-black-1);
+    text-align: center;
+    margin: 15px 0;
+    line-height: 27px;
+}
+#messShowBlock button{
+    padding: 10px 15px;
+    background-color: var(--color-border-1);
+    color: var(--color-white);
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.country-date{
+    margin: 10px 0;
+}
+.followers-more .follower{
+    width: 285px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.followers-more .follower h4{
+    color: #8a96a3;
+    font-size: 15px;
+}
+.followers-more .country-date ul{
+    display: flex;
+    list-style: none;
+}
+.followers-more .country-date ul li{
+    margin-left: 15px;
+    color: #8a96a3;
+    font-size: 15px;
+}
+.followers-more .foll-know h5{
+    color: #8a96a3;
+    font-size: 15px;
+}
+.followers-more .foll-know span{
+    color: black;
+}
+.followers-more .foll-know img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: -10px;
+}
+.followers-more .foll-know div{
+    margin-top: 7px;
+}
+.followers-more .tadw-btn{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 1000;
+}
+.centerSearch .tadw-btn{
+    margin-right: 20px;
+    display: flex;
+    border-top: 1px solid var(--color-white-3);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 610px;
+    border-bottom: 2px solid var(--color-white-7);
+    position: fixed;
+    top: 145px ;
+    z-index: 10000;
+}
+.followers-more .tadw-btn button
+{
+    padding: 15px 12px;
+    cursor: pointer;
+    width: 157px;
+    background-color: var(--color-white);
+    border: none;
+    font-size: 17px;
+}
+.centerSearch .tadw-btn button{
+    padding: 15px 12px;
+    cursor: pointer;
+    width: 210px;
+    background-color: var(--color-white);
+    border: none;
+    font-size: 17px;
+}
+.followers-more .tadw-btn button:focus,
+.centerSearch .tadw-btn button:focus{
+    background-color: var(--color-white-3);
+    border-bottom: 2px solid var(--color-border-3);
+    transition-duration: 0.2s;
+}
+.followers-more .tadw-btn button:hover,
+.centerSearch .tadw-btn button:hover{
+    background-color: var(--color-white-3);
+    transition-duration: 0.2s;
+}
+
+/* Notification Center & Message Center  */
+.centerNotification .btn-noti,
+.centerMessage .btn-noti{
+    width: 97%;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    border-top: 1px solid var(--color-white-5);
+}
+.centerNotification .btn-noti button,
+.centerMessage .btn-noti button{
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #cecdcd;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+}
+.centerNotification .btn-noti button:hover,
+.centerMessage .btn-noti button:hover{
+    background-color: var(--color-white-3);
+    transition-duration: 0.2s;
+    border-bottom: 2px solid var(--color-border-3);
+}
+.centerNotification .btn-noti button:focus,
+.centerMessage .btn-noti button:focus{
+    background-color: var(--color-white-3);
+    transition-duration: 0.2s;
+    border-bottom: 2px solid var(--color-border-3);
+}
+.centerNotification .noti-noInf,
+.centerMessage .noti-noInf{
+    width: 88%;
+    height: auto;
+    margin-right: 18px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: var(--color-white);
+    border-radius: 15px;
+}
+.centerNotification .noti-noInf i,
+.centerMessage .noti-noInf i{
+    background-color: var(--color-white-3);
+    color: var(--color-border-1);
+    padding: 30px;
+    font-size: 30px;
+    border-radius: 50%;
+    margin-bottom: 7px;
+}
+.centerNotification .noti-noInf p,
+.centerMessage .noti-noInf p{
+    font-size: 13px;
+    color: var(--color-white-5);
+    line-height: 25px;
+    text-align: center;
+    width: 423px;
+    margin: 10px 0px;
+}
+.centerNotification .noti-noInf button,
+.centerMessage .noti-noInf button{
+    background-color: var(--color-white-3);
+    border: 1px solid var(--color-border-3);
+    color: var(--color-border-3);
+    padding: 10px 40px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 15px;
+}
+.centerNotification .noti-noInf button:hover,
+.centerMessage .noti-noInf button:hover{
+    background-color: var(--color-border-3);
+    border: 1px solid var(--color-border-3);
+    color: var(--color-white);
+    transition-duration: 0.2s;
+}
+.centerNotification .noti-found,
+.centerMessage .noti-found,
+.centerGift .noti-found{
+    background-color: var(--color-white);
+    border-radius: 15px;
+    padding: 40px 15px 40px;    ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 92%;
+    margin-right: 20px;
+    margin-top: 15px;
+    border-bottom: 2px solid var(--color-border-3);
+    cursor: pointer;
+}
+.centerSearch .noti-found{
+    background-color: var(--color-white);
+    border-radius: 15px;
+    padding: 40px 15px 40px;    ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 92%;
+    margin-right: 20px;
+    margin-top: 15px;
+    border-bottom: 2px solid var(--color-border-3);
+}
+.centerNotification .noti-found .left-card-noti,
+.centerMessage .noti-found .left-card-noti,
+.centerSearch .noti-found .left-card-noti,
+.centerGift .noti-found .left-card-noti{
+    display: flex;
+}
+.centerNotification .noti-found .left-card-noti img,
+.centerMessage .noti-found .left-card-noti img,
+.centerSearch .noti-found .left-card-noti img,
+.centerGift .noti-found .left-card-noti img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.centerNotification .noti-found .left-card-noti h3,
+.centerMessage .noti-found h3,
+.centerSearch .noti-found h3,
+.centerGift .noti-found .left-card-noti h3{
+    font-size: 13px;
+    font-weight: normal;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    color: var(--color-white-5);
+}
+.centerSearch .noti-found .actName,
+.centerGift .noti-found .actName{
+    cursor: pointer;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+.centerSearch .noti-found .actName:hover,
+.centerGift .noti-found .actName:hover{
+    color: var(--color-border-3);
+    transition-duration: 0.2s;
+}
+.centerSearch .noti-found .foll-tadw,
+.centerGift .noti-found .foll-tadw{
+    display: flex;
+    justify-content: space-between;
+}
+.centerSearch .noti-found button,
+.centerGift .noti-found button{
+    background-color: var(--color-border-1);
+    padding: 10px 25px ;
+    border: none;
+    outline: none;
+    color: var(--color-white);
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.centerSearch .noti-found .giftCount,
+.centerGift .noti-found .giftCount{
+    padding: 5px 8px ;
+    letter-spacing: 0px;
+    margin-left: 10px;
+}
+/* .centerSearch .noti-found button:hover{
+    background-color: var(--color-border-3);
+    transition-duration: 0.2s;
+} */
+ /* Gift Box  */
+.closeGiftBox{
+    position: absolute;
+    top: 10px;
+    left: 23px
+}
+.closeGiftBox span{
+    cursor: pointer;
+}
+.closeGiftBox span:hover{
+    column-rule: var(--color-border-3);
+    transition-duration: 0.2s;
+}
+.giftBox{
+    width: 17%;
+    height: auto;
+    padding: 40px 50px 15px 45px;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    position: fixed;
+    z-index: 10000;
+    display: none;
+    top: 283px;
+    background: var(--color-white);
+}
+.giftBox ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.giftBox ul li{
+    cursor: pointer;
+}
+.giftBox ul li select{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+/* Log Out Page  */
+.allLogout{
+    position: fixed;
+    z-index: 100000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000002b;
+    right: -10000px;
+    top: 0;
+}
+.allLogout .logoutBox{
+    display: flex;
+    width: 45%;
+    height: 27%;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-white);
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.allLogout .logoutBox span{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+.allLogout .logoutBox button{
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 17px;
+    border: none;
+    outline: none;
+}
+.allLogout .logoutBox .logoutBtn{
+    background-color: var(--color-border-1);
+    color: var(--color-white);
+}
+.allLogout .logoutBox .logoutBtn a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+.allLogout .logoutBox .logoutBtn:hover{
+    background-color: var(--color-border-3);
+    transition-duration: 0.2s;
+}
+.allLogout .logoutBox .canselBtn{
+    background-color: var(--color-white-3);
+}
+.allLogout .logoutBox .canselBtn:hover{
+    background-color: var(--color-border-3);
+    transition-duration: 0.2s;
+    color: var(--color-white);
+}
+.centerSearch .showMoreFollow{
+    width: 96%;
+    margin-right: 19px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centerSearch .showMoreFollow button{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-border-3);
+    outline: none;
+    background-color: var(--color-border-1);
+    cursor: pointer;
+    color: var(--color-white);
+    border-radius: 10px;
+}
+.centerSearch .showMoreFollow button:hover{
+    color: var(--color-white);
+    background-color: var(--color-border-3);
+    transition-duration: 0.2s;
+}
+.centerSearch .hashtaqSearch{
+    width: 92.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 17px;
+    padding: 25px 15px ;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: var(--color-white);
+}
+.centerSearch .hashtaqSearch:hover{
+    background-color: var(--color-white-3);
+    transition-duration: 0.2s;
+    border: 1px solid var(--color-border-3);
+}
+.centerSearch .hashtaqSearch .rightHash{
+    display: flex;
+    align-items: center;
+}
+.centerSearch .hashtaqSearch .rightHash h3{
+    margin-left: 5px;
+    font-weight: bold;
+}
+.centerSearch .hashtaqSearch .rightHash span{
+    color: var(--color-black-1);
+    font-size: 13px;
+}
+.centerSearch .hashtaqSearch i{
+    cursor: pointer;
+}
+.centerSearch .hashtaqSearch i:hover{
+    color: var(--color-border-3);
+    transition-duration: 0.2s;
+}
+/* End Center Search Page  */
+.centerMessage .mess-found{
+    cursor: pointer;
+}
+.centerMessage .mess-found:hover,
+.centerNotification .noti-found:hover{
+    background-color: var(--color-white-3);
+    transition-duration: 0.3s;
+    border: 2px solid var(--color-border-3);
+}
+/* .centerMessage .mess-found:hover h3,
+.centerNotification .noti-found:hover h3{
+    color: black;
+} */
+.centerNotification .noti-found i,
+.centerMessage .noti-found i{
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+    border: 1px solid;
+    font-size: 12px;
+}
+.centerMessage .noti-found #unFollow{
+    display: none;
+}
+.centerNotification .noti-found i:hover,
+.centerMessage .noti-found i:hover{
+    color: var(--color-border-3);
+    border: 1px solid var(--color-border-3);
+}
+.centerMessage .messSearch{
+    width: 610px;
+    margin-right: 20px;
+    position: fixed;
+    margin-top: 2% ;
+}
+.centerSearch .messSearch{
+    width: 610px;
+    margin-right: 20px;
+    position: fixed;
+    margin-top: 0px ;
+    z-index: 100000;
+}
+#centerSear .people-card{
+    width: 580px;
+}
+.centerMessage .messSearch{
+    width: 97%;
+    margin-right: 20px;
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.centerMessage .messSearch i,
+.centerSearch .messSearch i{
+    position: absolute;
+    z-index: 1000;
+    top: 17px;
+    right: 15px;
+    font-size: 17px;
+}
+.centerMessage .messSearch input,
+.centerSearch .messSearch input{
+    width: 100%;
+    padding: 16px 40px;
+    background-color: var(--color-white);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    position: relative;
+    font-size: 18px;
+}
+.centerMessage .messSearch input{
+    width: 78%;
+    padding: 16px 40px;
+    background-color: var(--color-white);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    position: relative;
+    font-size: 18px;
+}
+.centerMessage .messSearch input:hover,
+.centerSearch .messSearch input:hover
+.centerSearch .messSearch input:focus{
+    background-color: var(--color-white-3);
+    border: 1px solid var(--color-border-3);
+    transition-duration: 0.2s;
+}
+.messSearch input:focus{
+    background-color: var(--color-white-3);
+    border: 1px solid var(--color-border-3);
+    transition-duration: 0.2s;
+}
+.centerMessage .messSearch button{
+    cursor: pointer;
+    padding: 0px 25px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--color-border-1);
+    color: var(--color-white);
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+.centerMessage .messSearch button:hover{
+    background-color: var(--color-border-3);
+    transition-duration: 0.2s;
+}
+/* center Generalation Setting  */
+.center-settAccount .generalSett,
+.center-ChanotiAcc .generalSett,
+.center-ChanInfAcc .generalSett,
+.center-foodAccount .generalSett{
+    margin-right: 20px;
+    background-color: var(--color-white-3);
+    width: 610px;
+    margin-bottom: 55px;
+}
+.center-settAccount .generalSett h3,
+.center-ChanotiAcc .generalSett h3,
+.center-ChanInfAcc .generalSett h3,
+.center-foodAccount .generalSett h3{
+    width: 97%;
+    padding: 11px;
+    color: var(--color-black-1);
+    background-color: var(--color-white-3);
+}
+.center-settAccount .allGeneralInf,
+.center-ChanotiAcc .allGeneralInf,
+.center-ChanInfAcc .allGeneralInf,
+.center-foodAccount .allGeneralInf{
+    width: 103%;
+    border-radius: 5px;
+    background-color: var(--color-white);
+}
+.center-settAccount .general,
+.center-ChanotiAcc .general,
+.center-ChanInfAcc .general,
+.center-foodAccount .general{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+} 
+/* .center-settAccount .general:hover,
+.center-ChanotiAcc .general:hover,
+.center-ChanInfAcc .general:hover,
+.center-foodAccount .general:hover{
+    background-color: var(--color-white-3);
+    transition-duration: 0.2s;
+    border-bottom: 2px solid var(--color-border-3);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+} */
+.center-settAccount .general .genInf,
+.center-ChanotiAcc .general .genInf,
+.center-ChanInfAcc .general .genInf,
+.center-foodAccount .general .genInf{
+    display: flex;
+    align-items: center;
+}
+.center-settAccount .general h4,
+.center-ChanotiAcc .general h4,
+.center-ChanInfAcc .general h4,
+.center-foodAccount .general h4{
+    font-size: 15px;
+}
+.center-settAccount .general span,
+.center-ChanotiAcc .general span,
+.center-ChanInfAcc .general span,
+.center-foodAccount .general span{
+    font-size: 13px;
+    margin-right: 5px;
+    color: var(--color-black-1);
+}
+.center-settAccount .general div i,
+.center-ChanotiAcc .general div i,
+.center-ChanInfAcc .general div i,
+.center-foodAccount .general div i{
+    margin-left: 10px;
+}
+.center-updateAcc .updateAcc,
+.center-emailAcc .updateAcc,
+.center-UrlAcc .updateAcc,
+.center-CvAcc .updateAcc,
+.center-genderAcc .updateAcc,
+.center-passAcc .updateAcc,
+.center-LangAcc .updateAcc,
+.center-ChanCounrAcc .updateAcc,
+.center-ChanCityAcc .updateAcc,
+.center-ChanVeriAcc .updateAcc,
+.center-ChanPrivrAcc .updateAcc,
+.center-ChanDeleteAcc .updateAcc{
+    width: 96.%;
+    margin-right: 20px;
+    padding-right: 10px;
+    height: 100vh;
+    background-color: var(--color-white);
+}
+.center-updateAcc .updateAcc h3,
+.center-emailAcc .updateAcc h3,
+.center-UrlAcc .updateAcc h3,
+.center-CvAcc .updateAcc h3,
+.center-genderAcc .updateAcc h3,
+.center-LangAcc .updateAcc h3,
+.center-ChanCounrAcc .updateAcc h3,
+.center-ChanCityAcc .updateAcc h3,
+.center-ChanVeriAcc .updateAcc h3,
+.center-ChanPrivrAcc .updateAcc h3,
+.center-ChanDeleteAcc .updateAcc h3,
+.center-passAcc .updateAcc h3{
+    color: var(--color-black-1);
+    padding: 10px;
+    border-bottom: 1px solid var(--color-black-1);
+    background-color: var(--color-white-3);
+}
+.center-updateAcc .updateAcc .first-secondName{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.center-updateAcc .updateAcc .first-secondName .firstName,
+.center-updateAcc .updateAcc .first-secondName .secondName{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+}
+.center-updateAcc .updateAcc .first-secondName input
+{
+    background-color: var(--color-white-3);
+    border-radius: 15px;
+    outline: none;
+    padding: 16px 13px;
+    width: 86%;
+    border: none;
+    border-bottom: 2px solid var(--color-black-1);
+    margin-top: 10px;
+    font-size: 17px;
+}
+.center-updateAcc .updateAcc .nameUser input,
+.center-emailAcc .updateAcc .nameUser input,
+.center-UrlAcc .updateAcc .nameUser input,
+.center-CvAcc .updateAcc .nameUser textarea,
+.center-passAcc .updateAcc .nameUser input,
+.center-ChanCityAcc .updateAcc .nameUser input,
+.center-ChanVeriAcc .updateAcc .nameUser input,
+.center-ChanDeleteAcc .updateAcc .nameUser input{
+    background-color: var(--color-white-3);
+    border-radius: 15px;
+    outline: none;
+    padding: 16px 13px;
+    width: 94%;
+    border: none;
+    border-bottom: 2px solid var(--color-black-1);
+    margin-top: 10px;
+    font-size: 17px;
+}
+.center-genderAcc .updateAcc .nameUser select,
+.center-LangAcc .updateAcc .nameUser select,
+.center-ChanCounrAcc .updateAcc .nameUser select,
+.center-ChanPrivrAcc .updateAcc .nameUser select{
+    background-color: var(--color-white-3);
+    border-radius: 15px;
+    outline: none;
+    padding: 16px 13px;
+    width: 98%;
+    border: none;
+    border-bottom: 2px solid var(--color-black-1);
+    margin-top: 10px;
+    font-size: 17px;
+}
+.center-updateAcc .updateAcc p,
+.center-emailAcc .updateAcc p,
+.center-UrlAcc .updateAcc p,
+.center-CvAcc .updateAcc p,
+.center-passAcc .updateAcc p,
+.center-ChanCityAcc .updateAcc p,
+.center-ChanVeriAcc .updateAcc p,
+.center-LangAcc .updateAcc p,
+.center-genderAcc .updateAcc p ,
+.center-ChanCounrAcc .updateAcc p,
+.center-ChanPrivrAcc .updateAcc p,
+.center-ChanotiAcc p,
+.center-ChanInfAcc p,
+.center-ChanDeleteAcc .updateAcc p,
+.center-foodAccount p{
+    font-size: 13px;
+    margin: 6px 7px 20px;
+    line-height: 20px;
+    color: var(--color-black-1);
+}
+.center-ChanVeriAcc .updateAcc .nameUser #FileNameL{
+    height: 200px;
+    border: 1px dashed;
+    cursor: pointer;
+}
+.center-ChanVeriAcc .updateAcc .nameUser #FileNameL:hover{
+    border: 1px dashed var(--color-border-3);
+}
+.center-genderAcc .updateAcc .nameUser select option{
+    cursor: pointer;
+}
+.center-updateAcc .updateAcc .first-secondName input:hover,
+.center-updateAcc .updateAcc .nameUser input:hover,
+.center-emailAcc .updateAcc .nameUser input:hover,
+.center-UrlAcc .updateAcc .nameUser input:hover,
+.center-CvAcc .updateAcc .nameUser textarea:hover,
+.center-genderAcc .updateAcc .nameUser select:hover,
+.center-passAcc .updateAcc .nameUser input:hover,
+.center-LangAcc .updateAcc .nameUser select:hover,
+.center-ChanCounrAcc .updateAcc .nameUser select:hover,
+.center-ChanCityAcc .updateAcc .nameUser input:hover,
+.center-ChanVeriAcc .updateAcc .nameUser input:hover,
+.center-ChanPrivrAcc .updateAcc .nameUser select:hover,
+.center-ChanDeleteAcc .updateAcc .nameUser input:hover,
+.center-updateAcc .updateAcc .first-secondName input:focus,
+.center-updateAcc .updateAcc .nameUser input:focus,
+.center-emailAcc .updateAcc .nameUser input:focus,
+.center-UrlAcc .updateAcc .nameUser input:focus,
+.center-CvAcc .updateAcc textarea:focus,
+.center-genderAcc .updateAcc .nameUser select:focus,
+.center-passAcc .updateAcc .nameUser input:focus,
+.center-LangAcc .updateAcc .nameUser select:focus,
+.center-ChanCounrAcc .updateAcc .nameUser select:focus,
+.center-ChanCityAcc .updateAcc .nameUser input:focus,
+.center-ChanVeriAcc .updateAcc .nameUser input:focus,
+.center-ChanPrivrAcc .updateAcc .nameUser select:focus,
+.center-ChanDeleteAcc .updateAcc .nameUser input:focus{
+    border-bottom: 2px solid var(--color-border-3);
+    transition-duration: 0.2s;
+}
+.center-updateAcc .updateAcc .saCha,
+.center-emailAcc .updateAcc .saCha,
+.center-UrlAcc .updateAcc .saCha,
+.center-CvAcc .updateAcc .saCha ,
+.center-genderAcc .updateAcc .saCha,
+.center-passAcc .updateAcc .saCha,
+.center-LangAcc .updateAcc .saCha,
+.center-ChanCounrAcc .updateAcc .saCha ,
+.center-ChanCityAcc .updateAcc .saCha,
+.center-ChanVeriAcc .updateAcc .saCha,
+.center-ChanPrivrAcc .updateAcc .saCha,
+.center-ChanotiAcc .saCha,
+.center-ChanInfAcc .saCha,
+.center-ChanDeleteAcc .saCha,
+.center-foodAccount .saCha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+}
+.center-updateAcc .updateAcc .saveChange,
+.center-emailAcc .updateAcc .saveChange,
+.center-UrlAcc .updateAcc .saveChange,
+.center-CvAcc .updateAcc .saveChange,
+.center-genderAcc .updateAcc .saveChange,
+.center-passAcc .updateAcc .saveChange,
+.center-LangAcc .updateAcc .saveChange,
+.center-ChanCounrAcc .updateAcc .saveChange,
+.center-ChanCityAcc .updateAcc .saveChange,
+.center-ChanVeriAcc .updateAcc .saveChange,
+.center-ChanPrivrAcc .updateAcc .saveChange,
+.center-ChanotiAcc .saveChange,
+.center-ChanInfAcc .saveChange,
+.center-ChanDeleteAcc .updateAcc .saveChange,
+.center-foodAccount .saveChange{
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background-color: var(--color-border-1);
+    color: var(--color-white);
+    font-size: 17px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* New Message Group  */
+.allNewMess{
+    background-color: #c4bdbd63;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000000;
+}
+.newMess{
+    width: 45%;
+    height: 400px;
+    padding: 15px;
+    background-color: var(--color-white);
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    overflow: scroll;
+}
+.newMess .header-newMess{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.newMess .header-newMess span{
+    margin-left: 15px;
+    cursor: pointer;
+}
+.newMess .header-newMess span:hover{
+    color: var(--color-border-3);
+    transition-duration: 0.2s;
+}
+.newMess .searOfMess{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+.newMess .searOfMess i{
+    position: absolute;
+    right: 10px;
+
+}
+.newMess .searOfMess input{
+    width: 100%;
+    border: 1px solid var(--color-border-3);
+    border-radius: 15px;
+    padding: 10px 35px 10px 10px;
+    font-size: 18px;
+    outline: none;
+}
+.newMess .searOfMess input:hover,
+.newMess .searOfMess input:focus{
+    background-color: var(--color-white-3);
+    transition-duration: 0.2s;
+    border: 1px solid var(--color-border-3);
+}
+.newMess .newGroup{
+    width: 97%;
+    border-bottom: 1px solid var(--color-black-1);
+    padding: 15px 15px 15px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.newMess #closeGroupAdd{
+    display: none;
+}
+.newMess .userGroup input{
+    display: none;
+}
+
+/* .newMess .newGroup:hover{
+    background-color: var(--color-white-3);
+    transition-duration: 0.2s;
+} */
+.newMess .newGroup i{
+    border-radius: 50%;
+    border: 1px solid;
+    padding: 6px;
+    margin-left: 10px;
+}
+.newMess .newGroup h4{
+    color: var(--color-black-1);
+}
+.userGroup{
+    width: 100%;
+    padding: 10px 0px 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}  
+.userGroup input{
+    width: 26px;
+    height: 18px;
+}
+/* .userGroup:hover,
+.userGroup:focus{
+    background-color: var(--color-white-3);
+    transition-duration: 0.2s;
+} */
+.userGroup img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.userGroup small{
+    font-size: 13px;
+    color: var(--color-black-1);
+}
+/* Start  Card Page */
+.heroCard{
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    z-index: 100000;
+    background: #0000002b;
+}
+.boxCardSel{
+    width: 340px;
+    height: 88vh;
+    background-color: var(--color-white);
+    padding: 15px 15px 115px;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    overflow: scroll;
+}
+.boxCardSel .choosePay{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 15px;
+    background-color: #4caf50;
+    position: fixed;
+    z-index: 100;
+    width: 293px;
+    bottom: 0px;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.boxCardSel .choosePay h4 ,
+.boxCardSel .choosePay i{
+    color: var(--color-white);
+}
+.boxCardSel .optionPay{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #c2cad2;
+}
+.boxCardSel .optionPay #closeCardBtn{
+    cursor: pointer;
+}
+.boxCardSel .optionPay #closeCardBtn:hover{
+    color: var(--color-border-3);
+}
+.boxCardSel .optionPay img{
+    width: 20px;
+    height: 20px;
+}
+.boxCardSel .radioLabel{
+    display: flex;
+    cursor: pointer;
+    border: 1px solid #c2cad2;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.boxCardSel .radioLabel input{
+    width: 25px;
+    height: 35px;
+    margin-left: 15px;
+}
+.boxCardSel .radioLabel .firstly{
+    width: 80px;
+    background-color: #4caf50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    position: absolute;
+    left: -19px;
+    transform: rotate(-45deg);
+    overflow: hidden;
+}
+.boxCardSel .radioLabel .firstly span{
+    color: var(--color-white);
+}
+.boxCardSel .radioLabel:hover,
+.boxCardSel .radioLabel:focus{
+    border: 1px solid var(--color-border-1);
+    transition-duration: 0.2s;
+}
+.boxCardSel .radioLabel img{
+    width: 60px;
+    height: 40px;
+}
+.boxCardSel .inforCard{
+    padding: 20px 0;
+    border-top: 1px solid #c2cad2;
+}
+.boxCardSel .inforCard ul{
+    margin-right: 20px;
+    padding-top: 20px;
+}
+.boxCardSel .inforCard ul li{
+    line-height: 30px;
+}
+.boxCardSel .inforCard h4{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c2cad2;
+}
+.boxCardSel .CartCard{
+    padding-top: 50px;
+    border-top: 1px solid #c2cad2;
+}
+.boxCardSel .CartCard .logoPay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boxCardSel .CartCard .logoPay img{
+    width: 100px;
+}
+.boxCardSel .CartCard .logoPay h5{
+    margin-top: 10px;
+}
+.boxCardSel .CartCard .logoPay h2{
+    margin-top: 15px;
+}
+.boxCardSel .CartCard .infMoney{
+    margin-top: 25px;
+}
+.boxCardSel .CartCard .infMoney div{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #c2cad2;
+}
+.boxCardSel .CartCard .infMoney span{
+    color: var(--color-black-1);
+}
+.boxCardSel .totalPrice{
+    padding: 15px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.boxCardSel .totalPrice h2{
+    font-size: 25px;
+    color: var(--color-white);
+    margin-left: 10px;
+}
+.boxCardSel .totalPrice h5{
+    font-size: 13px;
+    color: var(--color-black-1);
+}
+/* Cars Payment Page  */
+.boxCardPay{
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    z-index: 100000;
+    background: #0000002b;
+}
+.boxCardPay .boxCardPay2{
+    width: 340px;
+    height: auto;
+    background-color: var(--color-white);
+    padding: 33px 15px 15px;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    position: relative;
+}
+.boxCardPay span{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.boxCardPay .boxCardPay2 h5{
+    margin-bottom: 10px;
+
+}
+.boxCardPay .boxCardPay2 select{
+    width: 100%;
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid #c2cad2;
+    border-radius: 15px;
+    font-size: 15px;
+    outline: none;
+}
+.boxCardPay .boxCardPay2 .cardNumber{
+    position: relative;
+}
+.boxCardPay .boxCardPay2 .cardNumber input{
+    width: 85%;
+    padding: 10px 46px 10px 0px;
+    border: 1px solid #c2cad2;
+    border-radius: 15px;
+    margin-bottom: 8px;
+    outline: none;
+    font-size: 15px;
+    position: relative;
+}
+.boxCardPay .boxCardPay2 .cardNumber i{
+    position: absolute;
+    right: 15px;
+    top: 11px;
+    z-index: 10;
+    font-size: 18px;
+}
+.boxCardPay .boxCardPay2 .cardNumber input:hover,
+.boxCardPay .boxCardPay2 .datePIN input:hover,
+.boxCardPay .boxCardPay2 .nameCard:hover,
+.boxCardPay .boxCardPay2 .cardNumber input:focus,
+.boxCardPay .boxCardPay2 .datePIN input:focus,
+.boxCardPay .boxCardPay2 .nameCard:focus{
+    border: 1px solid var(--color-border-3);
+}
+.boxCardPay .boxCardPay2 .datePIN{
+    display: flex;
+    width: 100%;
+}
+.boxCardPay .boxCardPay2 .datePIN .lock{
+    position: relative;
+}
+.boxCardPay .boxCardPay2 .datePIN .lock input{
+    width: 69%;
+    margin-right: 15px;
+    padding: 10px 38px 10px 0px;
+}
+.boxCardPay .boxCardPay2 .datePIN i{
+    position: absolute;
+    right: 30px;
+    top: 11px;
+    z-index: 10;
+    font-size: 18px;
+}
+.boxCardPay .boxCardPay2 .datePIN input{
+    padding: 10px;
+    border: 1px solid #c2cad2;
+    border-radius: 15px;
+    width: 50%;
+    margin-bottom: 8px;
+    outline: none;
+    font-size: 15px;
+}
+.boxCardPay .boxCardPay2 .nameCard{
+    padding: 10px;
+    border: 1px solid #c2cad2;
+    width: 93%;
+    border-radius: 15px;
+    margin-bottom: 8px;
+    outline: none;
+    font-size: 15px;
+}
+.boxCardPay2 p{
+    font-size: 13px;
+    line-height: 23px;
+    margin: 35px 0;
+}
+.boxCardPay .boxCardPay2 .submitBtn{
+    padding: 10px 20px;
+    width: 100%;
+    background-color: var(--color-border-1);
+    color: var(--color-white);
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.boxCardPay .boxCardPay2 .submitBtn:hover{
+    background-color: var(--color-border-3);
+    transition-duration: 0.2s;
+}
+/* End  Card Page */
+
+/* Off & On Page  */
+.offOnBtn{
+    position: relative;
+    width: 65px;
+    height: 30px;
+    border-radius: 50px;
+    background: var(--color-white-3);
+    cursor: pointer;
+    margin-bottom: 15px;
+    border: 1px solid var(--color-border-3);
+}
+.whiteColor{
+    width: 50%;
+    background: black;
+    border-radius: 50%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid var(--color-border-3);
+    display: block;
+}
+
+/* Left Page */
+#main .leftPgeMain{
+    width: 233px;
+    min-width: 233px;
+    flex-basis: 233px;
+    -moz-transition: left .5s;
+    -o-transition: left .5s;
+    -webkit-transition: left .5s;
+    transition: left .5s;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    margin-right: 20px;
+}
+#main .leftPgeMain .search input{
+    padding: 10px 32px 10px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--color-white);
+    position: absolute;
+    color: #8f94a8;
+    width: 247px;
+}
+#main .leftPgeMain .search input:hover{
+    background-color: var(--color-white-3);
+    transition-duration: 0.2s;
+    border: 1px solid var(--color-border-1);
+}
+#main .leftPgeMain .search input:focus{
+    background-color: var(--color-white-3);
+    transition-duration: 0.2s;
+    border: 1px solid var(--color-border-1);
+}
+#main .leftPgeMain .search i{
+    position: relative;
+    right: 10px;
+    top: 9px;
+    color: #8f94a8;
+}
+#main .leftPgeMain .search input:hover i{
+    color: var(--color-border-1);
+}
+#main .who-following{
+    background-color: var(--color-white);
+    width: 100%;
+    border-radius: 15px;
+    margin: 28px 0 ;
+    padding: 10px 15px 10px 0px;
+}
+#main .who-following span{
+    color: #8f94a8;
+}
+#main .who-following .user-inf2{
+    margin: 15px 0;
+}
+#main .who-following small{
+    color: var(--color-border-3);
+    cursor: pointer;
+}
+#main .following-add .user-inf2{
+    margin: 15px 0;
+    width: 100%;
+}
+#main .following-add{
+    background-color: var(--color-white);
+    width: 614px;
+    border-radius: 15px;
+    margin: 10px 20px 0 0;
+    padding: 10px 15px 10px 0px;
+}
+#main .following-add span{
+    color: black;
+}
+#main .following-add .user-name2{
+    width: 100%;
+}
+#main .following-add .user-name2 div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#main .following-add h3{
+    margin-left: 10px;
+    color: var(--color-black-1);
+    font-size: 14px;
+}
+#main .following-add h3 span{
+    color: black !important;
+}
+#main .following-add button{
+    padding: 7px 20px;
+    background-color: #eee;
+    border: 1px solid rgb(153, 148, 148);
+    outline: none;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+#main .following-add button:hover{
+    background-color: var(--color-border-1);
+    color: white;
+    transition: 0.3s;
+}
+
+/* Important For You  */
+#main .imp-you{
+    width: 100%;
+    border-radius: 15px;
+    margin: 30px 0 10px;
+    padding: 10px 15px 10px 0px;
+    background-color: var(--color-white);
+}
+#main .imp-you h4{
+    color: #8f94a8;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+#main .imp-you .all-imp{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#main .imp-you .all-imp div{
+    background-color: var(--color-white);
+    margin: 4px;
+    width: fit-content;
+    border-radius: 50px;
+    padding: 7px 16px;
+    border: 1px solid #8f94a8;
+    font-size: 13px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+#main .imp-you .all-imp div:hover{
+    border: 1px solid var(--color-border-3);
+    background-color: var(--color-white-3);
+    transition: 0.2s;
+}
+#main .imp-you .all-imp div a{
+    color: black;
+    text-decoration: none;
+}
+/*  */
+.datTad{
+    padding-bottom: 12px;
+    display: flex; 
+    border-bottom: 1px solid #cbcdd654;
+}
+.datTad .numberView{
+    font-weight: bold;
+    margin-right: 10px;
+}
+.numberWho{
+    display: flex;
+    border-bottom: 1px solid #cbcdd654;
+    padding: 12px 0;
+}
+.numberWho h6{
+    margin-left: 10px;
+}
+.numberWho span{
+    font-weight: bold;
+}
+.answer{
+    width: 628px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 21px 12px 0;
+    position: relative;
+    z-index: 1;
+}
+.answer input{
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background-color: var(--color-white);
+    font-size: 16px;
+    padding: 15px 15px 15px 155px;
+    width: 100%;
+    position: relative;
+}
+.answer i{
+    color: var(--color-border-3);
+    cursor: pointer;
+    position: absolute;
+    left: 70px;
+    top: 17px;
+    z-index: 1000000;
+}
+.answer button{
+    background-color: var(--color-border-1);
+    padding: 8px 17px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--color-white);
+    margin-right: 20px;
+    position: absolute;
+    z-index: 100000;
+    left: 7px;
+    top: 8px;
+}
+.answer input:hover,
+.answer input:focus{
+    border: 1px solid var(--color-border-3);
+    transition-duration: 0.2s;
+}
+#imgNoti,
+#imgMess,
+#imgSear,
+#imgYour{
+    display: none;
+    height: 40px;
+    border-radius: 50%;
+}
+/* Footer main page*/
+#main .footer-main{
+    width: 100%;
+    border-radius: 15px;
+    margin: 30px 0 10px;
+    padding: 10px 15px 10px 0px;
+    background-color: var(--color-white);
+}
+#main .footer-main ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+#main .footer-main li{
+    margin: 5px;
+    font-size: 13px;
+}
+#main .footer-main li a{
+    text-decoration: none;
+    color: black;
+}
+#main .footer-main select{
+    border: none;
+    outline: none;
+}
+#rotateMo2{
+    display: none;
+}
+#hashtaqSear ,#userSearch , #peopleCard4,
+#firstUp , #newSearch , #peopleSearch , #mediaSearch{
+    margin-top: 160px;
+}
+
+@media (max-width:1160px){
+    #main .all-main .rightPgeMain a{
+        display: none;
+    }
+    #main .all-main .pro-no-sea, #main .all-main .more{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+@media (max-width:1130px){
+
+}
+@media (max-width:1100px){
+    #main .leftPgeMain{
+        display: none;
+        min-width: 20%;
+        width: 20%;
+        flex-basis: 20%;
+    }
+    #main .new-tadween{
+        display: block;
+        left: 26px;
+    }
+    #arrowSear,
+    #main .all-main .centerNotification .header i,
+    #main .all-main .centerMessage .header i{
+        display: none;
+    }
+    #head22 a, #header a{
+        display: block;
+    }
+    #imgNoti , #imgMess , #imgSear , #imgYour{
+        display: block;
+    }
+
+}
+@media (max-width:1000px){
+    #threePoint{
+        display: none;
+    }
+    
+    #hero-signup .signup .signupImg{
+        display: none;
+    }
+    #main .all-main .rightPgeMain{
+        display: none;
+    }
+    
+    #menu-mob{
+        display: block;
+    }
+    #main .all-main .center-userAcc,
+    #main .all-main .center-anotherUser,
+    #main .all-main .centerSearch,
+    #main .all-main .centerNotification,
+    #main .all-main .centerMessage,
+    #main .all-main .center-settAccount,
+    #main .all-main .center-updateAcc,
+    #main .all-main .center-emailAcc,
+    #main .all-main .center-UrlAcc,
+    #main .all-main .center-CvAcc,
+    #main .all-main .center-genderAcc,
+    #main .all-main .center-passAcc,
+    #main .all-main .center-LangAcc,
+    #main .all-main .center-ChanCounrAcc,
+    #main .all-main .center-ChanCityAcc,
+    #main .all-main .center-ChanVeriAcc,
+    #main .all-main .center-ChanPrivrAcc,
+    #main .all-main .center-ChanotiAcc ,
+    #main .all-main .center-ChanInfAcc,
+    #main .all-main .center-ChanDeleteAcc,
+    #main .all-main .showComment{
+        min-width: 63%;
+        width: 63%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    #main .all-main .center-userAcc .header,
+    #main .all-main .centerNotification .header,
+    #main .all-main .centerMessage .header,
+    #main .all-main .center-settAccount .header,
+    #main .all-main .center-updateAcc .header,
+    #main .all-main .center-emailAcc .header,
+    #main .all-main .center-UrlAcc .header,
+    #main .all-main .center-CvAcc .header,
+    #main .all-main .center-genderAcc .header,
+    #main .all-main .center-passAcc .header,
+    #main .all-main .center-LangAcc .header,
+    #main .all-main .center-ChanCounrAcc .header,
+    #main .all-main .center-ChanCityAcc .header,
+    #main .all-main .center-ChanVeriAcc .header,
+    #main .all-main .center-ChanPrivrAcc .header,
+    #main .all-main .center-ChanotiAcc .header,
+    #main .all-main .center-ChanInfAcc .header,
+    #main .all-main .center-ChanDeleteAcc .header,
+    #main .all-main .center-Sugges .header,
+    #main .all-main .center-followAdd .header,
+    #main .all-main .center-followingAdd .header,
+    #main .all-main .centerMar .header,
+    #main .all-main .center-anotherUser .header,
+    #main .all-main .showComment .header{
+    
+        width: 94%;
+        min-width: 94%;
+    }
+    #main .all-main .centerSearch .header{
+        width: 57%;
+        min-width: 57%;
+    }
+    .answer{
+        width: 100%;
+    }
+    .center-ChanotiAcc .allGeneralInf, 
+    .center-ChanInfAcc .allGeneralInf,
+    .center-ChanotiAcc .generalSett,
+    .center-ChanInfAcc .generalSett{
+
+        width: 100%;
+    }
+    #main .nav{
+        display: none;
+        z-index: 10;
+    }
+    #main .all-main .centerPgeMain .header,
+    #main #boxNewHead,
+    #main .people-card,
+    #main .all-main .center-editPro{
+        width: 95%;
+        min-width: 95%;
+    }
+    #main .all-main .centerPgeMain,
+    #main .all-main .centerMar,
+    #main .all-main .center-Sugges,
+    #main .all-main .center-followAdd,
+    #main .all-main .center-followingAdd,
+    #main .all-main .center-editPro{
+        width: 63%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    #main .all-main .rightPgeMain{
+        display: block;
+    }
+    #main .all-main .rightPgeMain{
+        width: 23%;
+        min-width: 23%;
+        flex-basis: 23%;
+    }
+    .center-settAccount .generalSett{
+        width: 98%;
+    }
+    .center-userAcc .profile-inf,
+     .center-anotherUser .profile-inf{
+        width: 98.4%;
+    }
+    /* .followers-more .tadw-btn button{
+        width: calc(100% / 4);
+    } */
+    .centerSearch .tadw-btn button{
+        width: 196px;
+    }
+    .centerSearch .messSearch,
+    .centerSearch .tadw-btn{
+        width: 60.5%;
+    }
+    .centerMessage .messSearch{
+        width: 100%;
+    }
+    #hashtaqSear{
+        width: 103%;
+    }
+    .followers-more .tadw-btn{
+        flex-wrap: nowrap;
+        z-index: 1000;
+    }
+    .centerNotification .noti-noInf,
+     .centerMessage .noti-noInf{
+        width: 90%;
+    }
+    .centerNotification .noti-found,
+    #main .following-add,
+    .centerMessage .mess-found{
+        width: 95%;
+    }
+    .center-updateAcc .updateAcc, .center-emailAcc .updateAcc,
+    .center-UrlAcc .updateAcc, .center-CvAcc .updateAcc,
+    .center-genderAcc .updateAcc, .center-passAcc .updateAcc,
+    .center-LangAcc .updateAcc, .center-ChanCounrAcc .updateAcc,
+    .center-ChanCityAcc .updateAcc, .center-ChanVeriAcc .updateAcc,
+    .center-ChanPrivrAcc .updateAcc, .center-ChanDeleteAcc .updateAcc{
+        width: 98%;
+    }
+    .followers-more .tadw-btn button {
+        width: 146px;
+    }
+    .centerSearch .noti-found{
+        width: 95%;
+    }
+}
+@media (max-width: 820px){
+    .followers-more .tadw-btn button{
+        width: 122px;
+    }
+    
+}
+@media (max-width:768px){
+    #main .nav{
+        display: block;
+        z-index: 10;
+    }
+    #main .all-main .centerPgeMain .header,
+    #main #boxNewHead,
+    #main .all-main .center-editPro .header{
+        width: 91%;
+        min-width: 91%;
+    }
+    #main .all-main .centerPgeMain,
+    #main .all-main .centerMar,
+    #main .all-main .center-Sugges,
+    #main .all-main .center-followAdd,
+    #main .all-main .center-followingAdd,
+    #main .all-main .center-editPro {
+        width: 63%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    #hero {
+        text-align: center;
+        display: flex;
+    }
+    #heroAdd{
+        text-align: center;
+        display: flex;
+    }
+    #hero .login , #heroAdd .login{
+        width: 90%;
+        margin-right: 11px;
+    }
+    .footer ul{
+        padding-right: 0;
+        justify-content: center;
+    }
+    #hero-signup .signup{
+        width: 90%;
+    }
+    #hero .rightPage img ,
+    #heroAdd .rightPage img {
+        width: 135px;
+    }
+    #hero .login{
+        margin-right: 13px;
+        width: 80%;
+        margin-right: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    #hero .login .userForm ,
+    #hero .login .passForm{
+        align-items: flex-start;
+    }
+    #hero .login .userForm input,
+    #hero .login .passForm input{
+        width: 100%;
+        font-size: 18px;
+    }
+    #hero .login .logButton input{
+        font-size: 18px;
+    }
+    #hero .rightPage{
+        display: none;
+    }
+    #hero form{
+        width: 96%;
+    }
+    #main .all-main .rightPgeMain{
+        display: none;
+    }
+    #main .boxNewTad{
+        width: 95%;
+        margin: 0;
+    }
+    #main .boxNewTad .center-icon-number{
+        padding-top: 100px;
+    }
+    #main .new-tadween{
+        display: block;
+        left: 26px;
+    }
+    #main .all-main .centerPgeMain .header,
+    #main .all-main .center-user-media .header,
+    #main .all-main .centerMar .header,
+    #main .all-main .center-Sugges .header,
+    #main .all-main .center-editPro .header
+    {
+        min-width: 93%;
+        width: 97%;
+        margin-left: 0;
+    }
+    #main .all-main .centerNotification .header,
+    #main .all-main .centerMessage .header,
+    #main .all-main .center-followAdd .header,
+    #main .all-main .center-followingAdd .header{
+        min-width: 100%;
+        width: 100%;
+        margin-right: 0;
+    }
+    #main .all-main .showComment .header
+    {
+        width: 100%;
+        min-width: 100%;
+        margin-right: 0;
+    }
+    
+    #main .all-main .centerGift{
+        height: 100vh;
+        width: 100%;
+        margin-right: -28px;
+    }
+    #main .all-main .centerSearch{
+        height: auto;
+        width: 100%;
+        margin-right: 0px;
+    }
+    .centerSearch .hashtaqSearch{
+        margin-right: 0;
+        width: 100%;
+        width: 94%;
+
+    }
+    .centerNotification .noti-noInf p,
+     .centerMessage .noti-noInf p{
+        width: 330px;
+     }
+    #main .all-main .center-userAcc .header,
+    #main .all-main .center-anotherUser .header,
+    #main .all-main .showComment .header
+    {
+        width: 95%;
+        min-width: 95%;
+        margin-right: 0;
+    }
+    #main .all-main .centerSearch .header,
+    #main .all-main .showComment .header,
+    #main .all-main .centerGift .header{
+        width: 90%;
+        min-width: 90%;
+        margin-right: 0;
+    }
+    #main .all-main .centerPgeMain,
+    #main .all-main .centerMar,
+    #main .all-main .center-Sugges,
+    #main .all-main .center-followAdd,
+    #main .all-main .center-followingAdd,
+    #main .all-main .center-editPro{
+        width: 95%;
+        margin-right: -42px;
+        margin-bottom: 30px;
+    }
+    #main .all-main .center-userAcc,
+    #main .all-main .center-anotherUser{
+        width: 95%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .center-userAcc .profile-inf,
+    .center-anotherUser .profile-inf{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    .center-editPro .profile-inf{
+        width: 101.5%;
+        margin-bottom: 30px;
+    }
+    #main .all-main .center-userAcc #peopleCard3,
+    #main .all-main .center-userAcc #peopleCard2,
+    #main .all-main .center-user-media,
+    #main .all-main .center-user-like{
+        width: 95%;
+    }
+    #main .arrow-up{
+        bottom: 73px;
+    }
+    #peopleCard4{
+        width: 97%;
+    }
+    #main .people-card{
+        width: 97%;
+        margin-right: 0;
+    }
+    #main .centerNotification,
+    #main .all-main .centerMessage{
+        width: 95%;
+        margin-right: -32px;
+    }
+    .centerNotification .noti-noInf,
+    #main .all-main .centerMessage .noti-noInf{
+        width: 95%;
+        margin-right: 0;
+    }
+    .centerNotification .noti-found,
+    #main .all-main .centerMessage .noti-found,
+    #main .following-add
+    {
+        width: 100%;
+        margin-right: 0;
+    }
+    #main #boxNewHead{
+        width: 97%;
+    }
+    .centerMessage .messSearch
+    {
+        width: 100%;
+        margin-right: 0;
+    }
+    .centerSearch .messSearch,
+    .centerSearch .tadw-btn{
+        width: 94%;
+        margin-right: 0;
+    }
+    .centerSearch .tadw-btn button{
+        width: 234px;
+    }
+    .food-pre{
+        display: none;
+    }
+    .center-settAccount .header,
+    .center-settAccount .generalSett,
+    .center-ChanotiAcc .generalSett,
+    .center-ChanInfAcc .generalSett,
+    .center-foodAccount .generalSett{
+        width: 95%;
+        min-width: 95%;
+        margin-right: 5px;
+    }
+    #main .all-main .center-settAccount,
+    #main .all-main .center-ChanotiAcc,
+    #main .all-main .center-ChanInfAcc,
+    #main .all-main .center-foodAccount{
+        width: 100%;
+    }
+    #main .all-main .center-updateAcc,
+    #main .all-main  .center-emailAcc,
+    #main .all-main .center-UrlAcc,
+    #main .all-main  .center-CvAcc,
+    #main .all-main .center-genderAcc,
+    #main .all-main .center-passAcc,
+    #main .all-main .center-LangAcc,
+    #main .all-main .center-ChanCounrAcc,
+    #main .all-main .center-ChanCityAcc,
+    #main .all-main .center-ChanVeriAcc,
+    #main .all-main .center-ChanPrivrAcc,
+    #main .all-main .center-ChanDeleteAcc{
+        width: 100%;
+        margin-right: -76px;
+    }
+    #main .all-main .center-updateAcc .header ,
+    #main .all-main .center-emailAcc .header,
+    #main .all-main .center-UrlAcc .header,
+    #main .all-main  .center-CvAcc .header,
+    #main .all-main .center-genderAcc .header,
+    #main .all-main .center-passAcc .header,
+    #main .all-main .center-LangAcc .header,
+    #main .all-main .center-ChanCounrAcc .header,
+    #main .all-main .center-ChanCityAcc .header,
+    #main .all-main .center-ChanVeriAcc .header,
+    #main .all-main .center-ChanPrivrAcc .header,
+    #main .all-main .center-ChanDeleteAcc .header,
+    #main .all-main .showComment .header{ 
+        min-width: 95%;
+        width: 100%;
+        margin-left: 0;
+    }
+    .center-updateAcc .updateAcc,
+    .center-emailAcc .updateAcc,
+    .center-UrlAcc .updateAcc,
+    .center-CvAcc .updateAcc,
+    .center-genderAcc .updateAcc,
+    .center-passAcc .updateAcc,
+    .center-LangAcc .updateAcc,
+    .center-ChanCounrAcc .updateAcc,
+    .center-ChanCityAcc .updateAcc,
+    .center-ChanVeriAcc .updateAcc,
+    .center-ChanPrivrAcc .updateAcc,
+    .center-ChanDeleteAcc .updateAcc{
+        width: 103%;
+    }
+    .newMess{
+        width: 85%;
+    }
+    .allLogout .logoutBox{
+        width: 92%;
+    }
+    #main .all-main .addAnotherAccBox{
+        width: 50%;
+    }
+    .centerImg img{
+        width: 400px;
+    }
+    .answer{
+        width: 98%;
+    }
+    .showComment{
+        margin-right: -20px;
+    }
+    .centerGift .noti-found,
+    .centerSearch .noti-found{
+        width: 95%;
+        margin-right: 0px;
+    }
+    #peopleCard{
+        margin-right: 19px;
+        width: 100%;
+    }
+    #main .all-main .center-dardasha .space-dard{
+        height: 84vh;
+    }
+    #main .all-main .center-dardasha{
+        margin-right: 0;
+        width: 106%;
+        min-width: 106%;
+        margin-top: -20px;
+    }
+    
+}
+@media (max-width:575px){
+    #heroAdd .login{
+        width: 80%;
+        margin-right: 17px;
+    }
+    #hero .login{
+        margin-right: 13px;
+        width: 80%;
+        margin-right: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    #hero .login .userForm ,
+    #hero .login .passForm{
+        align-items: flex-start;
+    }
+    #hero .login .userForm input,
+    #hero .login .passForm input{
+        width: 100%;
+        font-size: 18px;
+    }
+    #hero .login .logButton input{
+        font-size: 18px;
+    }
+    #hero .rightPage img,
+    #heroAdd .rightPage img {
+        width: 80px;
+        margin-bottom: 35px;
+    }
+    #main .arrow-up{
+        right: 26px;
+        bottom: 75px;
+    }
+    #main .boxNewTad{
+        width: 100%;
+        height: 96vh;
+        overflow: scroll;
+    }
+    #main .boxNewTad .centerImgInp textarea{
+        width: 250px;
+    }
+    .center-updateAcc .updateAcc,
+    .center-emailAcc .updateAcc,
+    .center-UrlAcc .updateAcc,
+    .center-CvAcc .updateAcc,
+    .center-passAcc .updateAcc,
+    .center-LangAcc .updateAcc,
+    .center-ChanCounrAcc .updateAcc,
+    .center-ChanCityAcc .updateAcc,
+    .center-ChanVeriAcc .updateAcc,
+    .center-ChanPrivrAcc .updateAcc,
+    .center-ChanDeleteAcc .updateAcc {
+        width: 105.5%;
+    }
+    .center-genderAcc .updateAcc{
+        width: 108.5%;
+    }
+    .centerImg img{
+        width: 400px;
+    }
+    .answer input{
+        padding: 15px 15px 15px 110px;
+    }
+    #main .people-cardMove{
+        width: 77%;
+    }
+    #main .all-main .centerPgeMain,
+    #main .all-main .center-editPro{
+        width: 103%;
+        margin-right: -35px;
+    }
+    #main .all-main .centerPgeMain .header,
+    #main .all-main .center-editPro .header{
+        background: white;
+        margin-top: -20px;
+        width: 100%;
+        margin-right: 0px;
+        border-bottom: 2px solid var(--color-white-7);
+        z-index: 1000;
+    }
+    #main #boxNewHead{
+        background: white;
+        margin-right: 0;
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid var(--color-white-7);
+    }
+    #main .people-card{
+        width: 100%;
+        margin: 0px;
+        border-bottom: 2px solid var(--color-white-7);
+    }
+    #peopleCard{
+        margin-right: 0px;
+    }
+    .center-userAcc .profile-inf,
+    .center-anotherUser .profile-inf
+    {
+        width: 121%;
+        margin-right: -37px;
+        margin-bottom: 0;
+        border-bottom: 2px solid var(--color-white-7);
+    }
+    .center-editPro .profile-inf
+    {
+        width: 119%;
+        margin-right: -37px;
+        margin-bottom: 0;
+        border-bottom: 2px solid var(--color-white-7);
+    }
+    #main .all-main .center-editPro .mainEdit img{
+        margin-right: 55px;
+    }
+    #main .all-main .center-editPro form{
+        width: 88%;
+        margin: 0 auto 0 5px;
+    }
+    .followers-more .center-foll {
+        padding: 0 30px 15px 0;
+    }
+    #allInfoUser{
+        margin-right: -25px;
+    }
+    #replaingPage{
+        width: 107%;
+        margin-right: -22px;
+    }
+    #main .all-main .center-userAcc{
+        margin-top: -20px;
+        margin-right: -6px;
+    }
+    #main .all-main .center-userAcc .header,
+    #main .all-main .center-anotherUser .header{
+        min-width: 109%;
+        width: 100%;
+        margin-right: -27px;
+    }
+    #main .all-main .center-userAcc #peopleCard3,
+    #main .all-main .center-userAcc #peopleCard2
+    {
+        width: 107%;
+        margin-right: -22px;
+    }
+    #main .all-main .center-user-media,
+    #main .all-main .center-user-like{
+        width: 107%;
+        margin-right: -22px;
+    }
+    #main .all-main #centerAnotherUser .center-user-media ,
+    #main .all-main #centerAnotherUser .center-user-like 
+    {
+        margin-right: 0px;
+        width: 100%;
+    
+    }
+    .settAccBox{
+        margin-right: 166px;
+        margin-top: -18px;
+    }
+    #messShowBlock{
+        margin-bottom: 48px;
+        margin-top: 8px;
+    }
+    #messShowBlock button{
+        font-size: 18px;
+    }
+    #main .all-main .centerNotification{
+        width: 100%;
+        margin-top: -20px;
+        margin-right: -30px;
+    }
+    #main .all-main .centerNotification .header,
+    #main .all-main .centerMessage .header{
+        width: 101%;
+        border-bottom: 2px solid var(--color-white-7);
+    }
+    .centerNotification .noti-noInf,
+    #main .all-main .centerMessage .noti-noInf{
+        width: 92%;
+        margin-top: 0;
+        border-bottom: 2px solid var(--color-white-7);
+    }
+    .centerNotification .noti-found,
+    #main .all-main .centerMessage .noti-found
+    {
+        width: 101%;
+        margin-top: 0;
+    }
+    #main .following-add{
+        width: 107%;
+        margin-top: 0;
+    }
+    /* Message Center Page */
+    #main .all-main .centerMessage,
+    #main .all-main .center-followAdd,
+    #main .all-main .center-followingAdd{
+        width: 100%;
+        margin-top: -20px;
+    }
+    .centerMessage .messSearch{
+        width: 110%;
+        margin-top: 0;
+        border-bottom: 2px solid var(--color-white-7);
+    }
+    .centerMessage .messSearch input{
+        width: 100%;
+    }
+    .centerMessage .messSearch button{
+        width: 47%;
+        padding: 10px;
+        font-size: 18px;
+    }
+    #main .all-main .centerSearch{
+        margin-right: -34px;
+        margin-top: -20px;
+        border-bottom: 2px solid var(--color-white-7);
+    }
+    .centerSearch .messSearch{
+        width: 99%;
+        margin-top: 0;
+        position: fixed;
+    }
+    .centerSearch .messSearch input{
+        padding: 16px 40px 16px 20px;
+    }
+    .centerSearch .tadw-btn{
+        width: 100%;
+        margin: 0;
+        border-bottom: 2px solid var(--color-white-7);
+        position: fixed;
+        top: 125px;
+        z-index: 10000;
+        margin-right: 0;
+    }
+    .centerSearch #hashtaqSear{
+        width: 108%;
+        margin: 0;
+        border-bottom: 2px solid var(--color-white-7);
+        margin-top: 108px;
+    }
+    .centerSearch .hashtaqSearch{
+        margin: 0;
+        border-bottom: 2px solid var(--color-white-7);
+    }
+    .centerSearch .showMoreFollow{
+        width: 102%;
+        margin: 0;
+    }
+    .centerSearch #userSearch{
+        width: 108%;
+        margin-top: 108px;
+    }
+    .centerSearch #userSearch .noti-found{
+        margin: 0;
+        padding: 15px 15px 15px 0;
+        width: 98%;
+    }
+    .centerSearch .noti-found .giftCount{
+        margin-left: 2px;
+        padding: 5px;
+        font-size: 13px !important;
+    }
+    .centerSearch .noti-found #follow{
+        font-size: 13px !important;
+    }
+    .centerSearch .noti-found .left-card-noti{
+        margin-bottom: 10px;
+    }
+    .centerSearch .noti-found button{
+        border-radius: 0;
+        padding: 8px 15px;
+    }
+    .centerSearch .noti-found .foll-tadw{
+        width: 100%;
+    }
+    .centerSearch .noti-found h3{
+        margin-right: 9px;
+        font-size: 11px !important;
+    }
+    #peopleCard4{
+        width: 102%;
+        margin-top: 108px;
+    }
+    #main .all-main .center-settAccount .header{
+        width: 104%;
+        min-width: 104%;
+        margin-right: 0;
+        margin-top: -20px;
+        border-bottom: 2px solid var(--color-white-7);
+    }
+    #main .all-main .center-settAccount{
+        margin-right: -50px;
+    }
+    .center-settAccount .generalSett{
+        width: 107%;
+        min-width: 107%;
+        margin-right: 0px;
+    }
+    #main .all-main .center-updateAcc{
+        width: 103%;
+        margin-top: -20px;
+    }
+    #main .all-main .center-updateAcc .header{
+        border-bottom: 2px solid var(--color-white-7);
+    }
+    #main .all-main .center-updateAcc form,
+    .center-emailAcc .updateAcc form,
+    #main .all-main .center-UrlAcc form,
+    #main .all-main .center-CvAcc form,
+    #main .all-main .center-passAcc form,
+    #main .all-main .center-ChanCityAcc form,
+    #main .all-main .updateAcc form{
+        padding-left: 10px;
+    }
+    #main .all-main .center-emailAcc,
+    #main .all-main .center-UrlAcc,
+    #main .all-main .center-CvAcc,
+    #main .all-main .center-genderAcc,
+    #main .all-main .center-passAcc,
+    #main .all-main .center-LangAcc,
+    #main .all-main .center-ChanCounrAcc,
+    #main .all-main .center-ChanCityAcc,
+    #main .all-main .center-ChanVeriAcc,
+    #main .all-main .center-ChanPrivrAcc,
+    #main .all-main .center-ChanDeleteAcc,
+    #main .all-main .center-Sugges,
+    #main .all-main .centerMar,
+    #main .all-main .center-anotherUser {
+        margin-top: -20px;
+    }
+    #main .all-main .center-anotherUser{
+        margin-right: -11px;
+    }
+    #main .all-main .showComment{
+        margin-right: -30px;
+        min-height: 130vh;
+        width: 103%;
+        margin-top: -20px;
+    }
+    #main .all-main .centerMar .header,
+    #main .all-main .centerMar #peopleCard7
+    {
+        width: 108%;
+        margin-right: -6px;
+        border-bottom: 2px solid var(--color-white-7);
+    }
+    #main .all-main .center-CvAcc .header,
+    #main .all-main .center-genderAcc .header,
+    #main .all-main .center-passAcc .header,
+    #main .all-main .center-LangAcc .header,
+    #main .all-main .center-ChanCounrAcc .header,
+    #main .all-main .center-ChanCityAcc .header,
+    #main .all-main .center-ChanVeriAcc .header,
+    #main .all-main .center-ChanPrivrAcc .header,
+    #main .all-main .center-ChanDeleteAcc .header{
+        margin-right: 20px;
+        width: 102%;
+        border-bottom: 2px solid var(--color-white-7);
+    }
+    #main .all-main .center-UrlAcc .header{
+        width: 102%;
+        margin-right: 17px;
+        border-bottom: 2px solid var(--color-white-7);
+    }
+    #main .all-main .center-emailAcc .header{
+        width: 104%;
+        margin-right: 13px;
+        border-bottom: 2px solid var(--color-white-7);
+    }
+    #main .all-main .centerMar #peopleCard7 .replayPost{
+        margin: 7px 40px 11px 0;
+    }
+    #main .all-main .center-Sugges #peopleCard5
+    {
+        width: 107.5%;
+        margin-right: -5px;
+    }
+    #main .all-main .center-Sugges .header{
+        width: 107.5%;
+        margin-right: -5px;
+        border-bottom: 2px solid var(--color-white-7);
+    }
+    #main .all-main .center-ChanotiAcc .header,
+    #main .all-main .center-ChanInfAcc .header{
+        width: 102%;
+        min-width: 102%;
+        margin-right: 10px;
+        border-bottom: 2px solid var(--color-white-7);
+    }
+    #main .all-main .center-ChanotiAcc,
+    #main .all-main .center-ChanInfAcc{
+        margin-right: -57px;
+        margin-top: -20px;
+    }
+    .center-ChanotiAcc .generalSett,
+    .center-ChanInfAcc .generalSett{
+        width: 109%;
+        min-width: 109%;
+    }
+    .center-ChanotiAcc .saCha,
+    .center-ChanInfAcc .saCha{
+        margin-right: 6px;
+    }
+    .center-ChanotiAcc p ,
+    .center-ChanInfAcc p{
+        margin: 6px 25px 20px;
+    }
+    .center-ChanotiAcc .general,
+    .center-ChanInfAcc .general{
+        border-bottom: 2px solid var(--color-white-7);
+    }
+    .center-emailAcc .updateAcc{
+        width: 107.5%;
+    }
+    .center-UrlAcc .updateAcc,
+    .center-CvAcc .updateAcc,
+    .center-LangAcc .updateAcc,
+    .center-ChanCounrAcc .updateAcc,
+    .center-ChanCityAcc .updateAcc,
+    .center-ChanPrivrAcc .updateAcc,
+    .center-ChanDeleteAcc .updateAcc
+    {
+        width: 107%;
+    }
+    .center-passAcc .updateAcc{
+        width: 108%;
+    }
+    .center-ChanVeriAcc .updateAcc {
+        width: 107%;
+        padding-bottom: 60px;
+    }
+    .nav ul li i{
+        font-size: 20px;
+    }
+    .boxCardPay{
+        align-items: flex-start;
+        margin-top: -20px;
+    }
+    .boxCardPay .boxCardPay2{
+        height: 100vh;
+        width: 100%;
+    }
+    #main .list-nav{
+        width: 245px;
+        padding-left: 13px;
+    }
+    #main .list-nav span{
+        right: 232px;
+        top: 16px;
+        font-size: 19px;
+    }
+    #main .list-nav ul li i{
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    #main .all-main .addAnotherAccBox{
+        width: 95%;
+    }
+    #main .all-main .addAnotherAccBox small{
+        font-size: 20px;
+    }
+    #hero-signup{
+        margin-top: -20px;
+        height: 100vh;
+    }
+    #heroAdd{
+        margin-top: -20px;
+        height: 100vh;
+        text-align: right;
+    }
+    #hero-signup .signup{
+        overflow-y: scroll;
+        width: 100%;
+    }
+    #hero-signup .signup .signupInf{
+        padding: 9px 10px 22px;
+        
+    }
+    #hero-signup .signup .signupInf .par{
+        margin-bottom: 15px;
+    }
+    #hero-signup .signup .closeUpBtn,
+    #heroAdd .closeSiBtn{
+        left: 15px;
+    }
+    #hero-signup .signup .signupInf .signup-btn input{
+        width: 100%;
+        height: 40px;
+    }
+    #hero-signup .signup .signupInf .inform{
+        margin-bottom: 15px;
+    }
+    #hero-signup .signup .signupInf .inform input{
+        font-size: 18px;
+    }
+    #hero-signup .signup .signupInf .sinInAgain {
+        margin-top: 15px;
+    }
+    #heroAdd .login .userForm label{
+        margin-bottom: 10px;
+    }
+    #heroAdd #loginDar{
+        margin-right: 0;
+        width: 95%;
+        height: 93vh;
+    }
+    #heroAdd #loginDar p{
+        margin-bottom: 35px;
+    }
+    #heroAdd .login{
+        padding: 25px 10px;
+    }
+    #heroAdd .login .userForm input,
+    #heroAdd .login .passForm input{
+        font-size: 18px;
+    }
+    #heroAdd .login .logButton input{
+        font-size: 18px;
+    }
+    #firstUp ,#newSearch , #peopleSearch , #mediaSearch{
+        margin-top: 108px;
+        width: 102%;
+    }
+    .giftBox{
+        width: 75%;
+        top: 265px;
+    }
+    .giftBox ul{
+        justify-content: space-around;
+    }
+    .giftBox ul li{
+        font-size: 18px;
+    }
+    .giftBox ul li select{
+        font-size: 18px;
+    }
+    .closeGiftBox{
+        top: 8px;
+        left: 60px;
+    }
+    #main .all-main .centerGift{
+        margin-right: -35px;
+        margin-top: -20px;
+    }
+    #main .all-main .centerGift .header{
+        width: 102%;
+        min-width: 102%;
+        border-bottom: 2px solid var(--color-white-7);
+    }
+    .centerGift .noti-found{
+        width: 102%;
+        margin-top: 0;
+    }
+    #main .allBoxNewTad{
+        align-items: flex-start;
+    }
+    #hero .rightPage{
+        display: none;
+    }
+    #footer{
+        height: 87px;
+    }
+    #hero{
+        height: 87vh;
+    }
+    .followers-more .tadw-btn button{
+        width: 25%;
+    }
+    .followers-more .tadw-btn button,
+    .centerSearch .tadw-btn button,
+    .centerSearch .tadw-btn button{
+        font-weight: bold;
+    }
+    #main .all-main .centerPgeMain .header,
+    #main .all-main .center-userAcc .header,
+    #main .all-main .center-user-media .header,
+    #main .all-main .center-anotherUser .header,
+    #main .all-main .centerNotification .header,
+    #main .all-main .centerMessage .header,
+    #main .all-main .center-settAccount .header,
+    #main .all-main .center-updateAcc .header,
+    #main .all-main .center-emailAcc .header,
+    #main .all-main .center-UrlAcc .header,
+    #main .all-main .center-CvAcc .header, 
+    #main .all-main .center-genderAcc .header,
+    #main .all-main .center-passAcc .header,
+    #main .all-main .center-LangAcc .header,
+    #main .all-main .center-ChanCounrAcc .header,
+    #main .all-main .center-ChanCityAcc .header,
+    #main .all-main .center-ChanVeriAcc .header,
+    #main .all-main .center-ChanPrivrAcc .header,
+    #main .all-main .center-ChanotiAcc .header,
+    #main .all-main .center-ChanInfAcc .header,
+    #main .all-main .center-ChanDeleteAcc .header,
+    #main .all-main .centerMar .header,
+    #main .all-main .center-foodAccount .header,
+    #main .all-main .center-Sugges .header,
+    #main .all-main .showComment .header,
+    #main .all-main .centerGift .header,
+    #main .all-main .center-editPro .header{
+        z-index: 1000;
+    }
+    #main .all-main .center-followAdd .header,
+    #main .all-main .center-followingAdd .header{
+        width: 103%;
+        border-bottom: 2px solid var(--color-white-7);
+    }
+    #main .all-main .centerSearch .header{
+        z-index: 1000;
+        width: 102%;
+        min-width: 102%;
+        margin-right: 0;
+        position: sticky;
+        transition-duration: 0.4s;
+    }
+    .centerImg{
+        top: 0;
+        right: 0;
+        background-color: black;
+    }
+    .centerImg img{
+        width: 100%;
+    }
+    .centerImg span{
+        top: 13px;
+        left: 25px;
+        font-size: 25px;
+    }
+    .boxCardPay .boxCardPay2 .submitBtn{
+        font-size: 16px;
+    }
+    .center-settAccount .generalSett h3{
+        padding:11px 11px 11px 0;
+    }
+    .center-settAccount .allGeneralInf{
+        width: 106%;
+    }
+    .boxCardSel{
+        width: 100%;
+    }
+    .boxCardSel .choosePay{
+        width: 85%;
+    }
+    .boxCardPay .boxCardPay2 h5,
+    .boxCardPay .boxCardPay2 select,
+    .boxCardPay .boxCardPay2 .cardNumber input,
+    .boxCardPay .boxCardPay2 .datePIN input,
+    .boxCardPay .boxCardPay2 .datePIN .lock input,
+    .boxCardPay .boxCardPay2 .nameCard,
+    .boxCardPay span , #main .boxNewTad .footer-box button,
+    #main .boxNewTad .header-box span,
+    #main .boxNewTad .center-icon i{
+        font-size: 18px;
+    }
+    .allNewMess{
+        align-items: flex-start;
+        top: 0;
+    }
+    .newMess{
+        width: 100%;
+    }
+    .newMess #closeGroupAdd{
+        position: absolute;
+        top: 141px;
+        left: 21px;
+    }
+    .allBoxNewHead{
+        display: none;
+    }
+    #imgProBac2 , #bacImgPro{
+        height: 120px;
+    }
+    #rotateMo2{
+        display: block;
+    }
+    /* .owl-carousel .owl-stage-outer{
+        width: 221%;
+        margin-right: -355px;
+    }
+    .owl-carousel .owl-stage{
+        width: 657px;
+        left: 83px;
+        display: flex;
+    }
+    .owl-carousel.owl-drag .owl-item{
+        width: 518.538px !important;
+        margin-right: -1px;
+        margin-right: 0 in !important;
+    }
+    .item{
+        width: 93%;
+        margin-right: 1px;
+    }
+   .item .people-card{
+        width: 138%;
+        margin-right: -88px;
+    }
+    .owl-item{
+        width: 545.438px;
+        margin-right: 10px;
+    } */
+    .owl-stage {
+        margin-right: -984px;
+    }
+    .owl-carousel .owl-stage-outer{
+        width: 116%;
+        margin-right: -24px;
+    }
+    /* .owl-carousel{
+        width: 105%;
+    }
+    .owl-carousel .owl-stage{
+        width: 1475px !important;
+    } */
+    p,h1,h2,h3,h4,h5,h6,span,small,button{
+        font-size: 15px !important;
+        line-height: 23px !important;
+    }
+
+    .img-icon{
+        width: 90%;
+        height: 315px;
+    }
+    #main .all-main .center-dardasha{   
+        width: 111%;
+        min-width: 111%;
+    }
+    #main .all-main .center-dardasha .mess-between{
+        width: 95%;
+    }
+    #main .all-main .center-dardasha .space-dard input[type='text']{
+        width: 93%;
+    }
+
+}
+
+
+@media (max-width: 338px){
+    #main .centerNotification, 
+    #main .all-main .centerMessage{
+        margin-right: -32px;
+    }
+    .centerNotification .noti-noInf p, 
+    .centerMessage .noti-noInf p{
+        width: 256px;
+    }
+    .centerNotification .noti-noInf, 
+    #main .all-main .centerMessage .noti-noInf{
+        width: 113%;
+        padding: 30px 0;
+    }
+    .centerMessage .messSearch button{
+        padding: 0px;
+        font-size: 16px;
+    }
+    .centerSearch #userSearch .noti-found{
+        padding: 15px 15px 15px 5px;
+        width: 93%;
+    }
+    .centerSearch #userSearch{
+        width: 113%;
+    }
+    .centerSearch .noti-found h3{
+        font-size: 11px !important;
+    }
+    .centerSearch .noti-found button{
+        padding: 5px;
+    }
+    .centerGift .noti-found .left-card-noti h3{
+        margin-right: 7px;
+    }
+    .centerGift .noti-found h5{
+        font-size: 12px;
+    }
+    #main .all-main .centerNotification{
+        margin-right: -32px;
+    }
+    
+}
+
+
+
+/* @media (max-width:687px){
+    #main .all-main .centerPgeMain .header,
+    #main .all-main .center-userAcc .header,
+    #main .all-main .center-user-media .header,
+    #main .all-main .center-anotherUser .header ,
+    #main .all-main .centerNotification .header,
+    #main .all-main .centerMessage .header
+    {
+        width: 100%;
+        min-width: 100%;
+        margin-right: 0;
+        
+    }
+    #main .all-main .centerPgeMain,
+    .center-userAcc .profile-inf{
+        width: 95%;
+        margin-right: -42px;
+        margin-bottom: 30px;
+    }
+    #main .boxNewTad{
+        width: 95%;
+        margin: 0;
+    }
+    #main .boxNewTad .center-icon-number{
+        padding-top: 100px;
+    }
+    #main .all-main .centerNotification .btn-noti,
+    #main .all-main .centerMessage .btn-noti{
+        width: 350px;
+    }
+    #main .all-main .centerMessage .noti-noInf{
+        width: 294px;
+    }
+    #main .all-main .centerMessage .noti-found{
+        width: 325px;
+    }
+    #main .all-main .people-card{
+        width: 100%;
+        margin: 12px 0 12px 0;
+    }
+    .center-anotherUser .profile-inf{
+        width: 100%;
+    }
+    .center-userAcc .profile-inf{
+        width: 350px;
+        min-height: 350px;
+    }
+    #main .arrow-up{
+        bottom: 40px;
+        right: 26px;
+    }
+    #main .new-tadween{
+        display: block;
+        left: 26px;
+    }
+    #main .boxNewTad .centerImgInp textarea{
+        width: 250px;
+    }
+    #main .all-main{
+        padding: 0;
+    }
+    #main .centerNotification{
+        width: 100%;
+        height: 100vh;
+        margin-right: -32px;
+    }
+    .centerNotification .noti-noInf{
+        width: 100%;
+        margin-right: 0;
+    }
+    .centerNotification .noti-found{
+        width: 100%;
+        margin-right: 0;
+    }
+    .centerNotification .noti-noInf p,
+     .centerMessage .noti-noInf p{
+        width: 355px;
+    }
+    
+} */
+
+
+
+
+
+

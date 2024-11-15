@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css Link -->
+    <link rel="stylesheet" href="../style.css">
+    <!--  Font Awesome Icons Link   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Icon Page -->
+    <link rel="icon" href="../img/1730056726850.png">
+    <title>تعديل سجل حفظ</title>
+</head>
+<body>
+    <!-- Log In Page  -->
+    <div class="container container-dash">
+        <!-- header -->
+        <header class="headerLogIn">
+            <div class="logo">
+                <img src="../img/1730056726850.png" alt="">
+                <h1>نظام النور الالكتروني <br> لتحفيظ القرآن الكريم</h1>
+            </div>
+            <div>
+                <div class="profImg">
+                    <h4>يزيد وليد</h4>
+                    <img class="" src="../img/me3.png" alt="مركز النور">
+                </div>
+                <a href="../login.html" class="logoutBtn" id="logoutBtn">
+                    <h3>تسجيل الخروج</h3>
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+            </div>
+        </header>
+        <!-- List Right Page  -->
+       <div class="listRight">
+           <i id="list" class="fa-solid fa-list"></i>
+           <span id="closeList">x</span>
+           <nav class="nav">
+            <h3 class="idaraName">صفحة الإدارة</h3>
+            <!-- navBar  -->
+            <ul>
+                <li class="activeMain"><a href="">الرئيسية</a></li>
+                <li><a href=""> الطلاب</a></li>
+                <li><a href=""> المعلمون</a></li>
+                <li><a href="">الحلقات</a>  </li>
+                <li><a href="">الحضور والغياب</a> </li>
+                <li><a href="">الإختبارات</a> </li>
+                <li><a href="">سجل المتابعة</a> </li>
+                <li><a href="">الاستعلامات والتقارير</a> </li>
+                <li><a href="">أولياء الأمور</a> </li>
+             </ul>
+        </nav>
+       </div>
+       <!-- head Information -->
+       <div class="head-inf">
+           <div class="head-inf-in">
+                <a href="index.html">الرئيسية /</a>
+                <a href="saveNoteSett.html">سجل الحفظ /</a>
+                <a href="saveUpdateicon.html" class="active-head">تعديل سجل حفظ</a>
+           </div>
+       </div>
+       <!-- center Page  -->
+        <form action="" class="changePass">
+            <div class="">
+                <label for="studNum">رقم الطالب</label>
+                <input type="number" id="studNum" placeholder="أدخل رقمك" required> 
+            </div>
+            <div class="">
+                <label for="studName">اسم الطالب</label>
+                <input type="text" id="studName" placeholder="أدخل اسمك" required> 
+            </div>
+            <div class="">
+                <label for="date">التاريخ</label>
+                <input type="da" id="date" placeholder="أدخل التاريخ" required> 
+            </div>
+            <div class="">
+                <label for="lastSave">آخر موضع حفظ: السورة </label>
+                <input type="text" id="lastSave" placeholder="أدخل اسم السورة" required>
+            </div>
+            <div class="">
+                <label for="lastSave2">آخر موضع حفظ: الآية </label>
+                <input type="number" id="lastSave2" placeholder="أدخل رقم الآية" required>
+            </div>
+            <div class="">
+                <label for="startSave">بداية موضع الحفظ الجديد: من سورة </label>
+                <input type="text" id="startSave" placeholder="أدخل اسم السورة" required>
+            </div>
+            <div class="">
+                <label for="startSavesoraa">بداية موضع الحفظ الجديد: من آية </label>
+                <input type="number" id="startSavesoraa" placeholder="أدخل رقم الآية" required>
+            </div>
+            <div class="">
+                <label for="EndSave">نهاية موضع الحفظ الجديد: إلى سورة </label>
+                <input type="text" id="EndSave" placeholder="أدخل اسم السورة" required>
+            </div>
+            <div class="">
+                <label for="endSavesoraa">نهاية موضع الحفظ الجديد: إلى آية </label>
+                <input type="number" id="endSavesoraa" placeholder="أدخل رقم الآية" required>
+            </div>
+            <div class="">
+                <label for="accountStat2">الحالة </label>
+                <select name="" id="accountStat2">
+                    <option value="">حفظ</option>
+                    <option value="">غير لم يتم الحفظ</option>
+                </select>
+            </div>
+            <input type="submit" value="تعديل سجل الحفظ للطالب" required name="" id="">
+        </form>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>

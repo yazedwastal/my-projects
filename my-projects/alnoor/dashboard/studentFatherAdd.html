@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css Link -->
+    <link rel="stylesheet" href="../style.css">
+    <!--  Font Awesome Icons Link   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Icon Page -->
+    <link rel="icon" href="../img/1730056726850.png">
+    <title>إضافة ولي أمر جديد</title>
+</head>
+<body>
+    <!-- Log In Page  -->
+    <div class="container container-dash">
+        <!-- header -->
+        <header class="headerLogIn">
+            <div class="logo">
+                <img src="../img/1730056726850.png" alt="">
+                <h1>نظام النور الالكتروني <br> لتحفيظ القرآن الكريم</h1>
+            </div>
+            <div>
+                <div class="profImg">
+                    <h4>يزيد وليد</h4>
+                    <img class="" src="../img/me3.png" alt="مركز النور">
+                </div>
+                <a href="../login.html" class="logoutBtn" id="logoutBtn">
+                    <h3>تسجيل الخروج</h3>
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+            </div>
+        </header>
+        <!-- List Right Page  -->
+       <div class="listRight">
+           <i id="list" class="fa-solid fa-list"></i>
+           <span id="closeList">x</span>
+           <nav class="nav">
+            <h3 class="idaraName">صفحة الإدارة</h3>
+            <!-- navBar  -->
+            <ul>
+                <li class="activeMain"><a href="">الرئيسية</a></li>
+                <li><a href=""> الطلاب</a></li>
+                <li><a href=""> المعلمون</a></li>
+                <li><a href="">الحلقات</a>  </li>
+                <li><a href="">الحضور والغياب</a> </li>
+                <li><a href="">الإختبارات</a> </li>
+                <li><a href="">سجل المتابعة</a> </li>
+                <li><a href="">الاستعلامات والتقارير</a> </li>
+                <li><a href="">أولياء الأمور</a> </li>
+             </ul>
+        </nav>
+       </div>
+       <!-- head Information -->
+       <div class="head-inf">
+           <div class="head-inf-in">
+                <a href="index.html">الرئيسية /</a>
+                <a href="setting.html">الإعدادات /</a>
+                <a href="accountSett.html">إدارة الحسابات /</a>
+                <a href="studFatherSett.html">ولي أمر طالب جديد /</a>
+                <a href="studentFatherAdd.html" class="active-head">إضافة ولي أمر جديد</a>
+           </div>
+       </div>
+       <!-- center Page  -->
+        <form action="" class="changePass">
+            <div class="">
+                <label for="name">الاسم</label>
+                <input type="text" id="name" placeholder="أدخل اسمك" required>
+            </div>
+            <div class="">
+                <label for="idNumber">رقم الهوية</label>
+                <input type="number" id="idNumber" placeholder="أدخل رقم هويتك" required> 
+            </div>
+            <div class="">
+                <label for="dob">تاريخ الميلاد </label>
+                <input type="date" id="dob" placeholder="أدخل تاريخ ميلادك" required>
+            </div>
+            <div class="">
+                <label for="nationality">الجنسية </label>
+                <input type="text" id="nationality" placeholder="أدخل جنسيتك" required>
+            </div>
+            <div class="">
+                <label for="phoneNum">رقم الهاتف </label>
+                <input type="number" id="phoneNum" placeholder="أدخل رقم هاتفك" required>
+            </div>
+            <div class="">
+                <label for="whatsNum">رقم الواتس </label>
+                <input type="number" id="whatsNum" placeholder="أدخل رقم الواتس" required>
+            </div>
+            <div class="">
+                <label for="houseNum">رقم المنزل </label>
+                <input type="text" id="houseNum" placeholder="أدخل رقم المنزل" required>
+            </div>
+            <div class="">
+                <label for="logDate">تاريخ التسجيل </label>
+                <input type="date" id="logDate" placeholder="أدخل تاريخ التسجيل" required>
+            </div>
+            <div class="">
+                <label for="logDate">تاريخ بداية الحفظ </label>
+                <input type="date" id="logDate" placeholder="أدخل تاريخ بداية الحفظ" required>
+            </div>
+            <div class="">
+                <label for="logDate">بداية موضع الحفظ </label>
+                <input type="text" id="logDate" placeholder="أدخل بداية موقع الحفظ" required>
+            </div>
+            <div class="">
+                <label for="type">المساق</label>
+                <input type="text" id="type" placeholder="أدخل عنوان المساق" required>
+            </div>
+            <div class="">
+                <label for="status">الحالة</label>
+                <input type="text" id="status" placeholder="أدخل حالتك" required>
+            </div>
+            <div class="">
+                <label for="shaqaa">الشقة</label>
+                <input type="text" id="shaqaa" placeholder="أدخل عنوان شقتك" required>
+            </div>
+            <div class="">
+                <label for="build">البناية</label>
+                <input type="text" id="build" placeholder="أدخل عنوان بنايتك" required>
+            </div>
+            <div class="">
+                <label for="street">الطريق</label>
+                <input type="text" id="street" placeholder="أدخل عنوان طريقك" required>
+            </div>
+            <div class="">
+                <label for="mogamaa">المجمع</label>
+                <input type="text" id="mogamaa" placeholder="أدخل عنوان مجمعك" required>
+            </div>
+            <div class="">
+                <label for="center">المنطقة</label>
+                <input type="text" id="center" placeholder="أدخل عنوان منطقتك" required>
+            </div>
+            <input type="submit" value="إضافة ولي أمر جديد" required name="" id="">
+        </form>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>

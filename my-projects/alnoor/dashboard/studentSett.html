@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css Link -->
+    <link rel="stylesheet" href="../style.css">
+    <!--  Font Awesome Icons Link   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Icon Page -->
+    <link rel="icon" href="../img/1730056726850.png">
+    <title>إعدادات الطلاب</title>
+</head>
+<body>
+    <!-- Log In Page  -->
+    <div class="container container-dash">
+        <!-- header -->
+        <header class="headerLogIn">
+            <div class="logo">
+                <img src="../img/1730056726850.png" alt="">
+                <h1>نظام النور الالكتروني <br> لتحفيظ القرآن الكريم</h1>
+            </div>
+            <div>
+                <div class="profImg">
+                    <h4>يزيد وليد</h4>
+                    <img class="" src="../img/me3.png" alt="مركز النور">
+                </div>
+                <a href="../login.html" class="logoutBtn" id="logoutBtn">
+                    <h3>تسجيل الخروج</h3>
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+            </div>
+        </header>
+        <!-- List Right Page  -->
+       <div class="listRight">
+           <i id="list" class="fa-solid fa-list"></i>
+           <span id="closeList">x</span>
+           <nav class="nav">
+            <h3 class="idaraName">صفحة الإدارة</h3>
+            <!-- navBar  -->
+            <ul>
+                <li class="activeMain"><a href="">الرئيسية</a></li>
+                <li><a href=""> الطلاب</a></li>
+                <li><a href=""> المعلمون</a></li>
+                <li><a href="">الحلقات</a>  </li>
+                <li><a href="">الحضور والغياب</a> </li>
+                <li><a href="">الإختبارات</a> </li>
+                <li><a href="">سجل المتابعة</a> </li>
+                <li><a href="">الاستعلامات والتقارير</a> </li>
+                <li><a href="">أولياء الأمور</a> </li>
+             </ul>
+        </nav>
+       </div>
+       <!-- head Information -->
+       <div class="head-inf">
+           <div class="head-inf-in">
+                <a href="index.html">الرئيسية /</a>
+                <a href="setting.html">الإعدادات /</a>
+                <a href="accountSett.html">إدارة الحسابات /</a>
+                <a href="setting.html" class="active-head">الطلاب</a>
+           </div>
+       </div>
+       <!-- add new student -->
+        <div class="add-stud">
+            <a href="studentAdd.html" class="">
+                <i class="fa-solid fa-user"></i>
+                <h3>إضافة طالب جديد</h3>
+            </a>
+        </div>
+        <!-- search of student -->
+         <form action="" class="searchOfStud">
+            <input type="search" placeholder="البحث عن اسم الطالب">
+            <input type="submit" value="بحث">
+         </form>
+         <!-- tables -->
+          <div class="table">
+          <table >
+            <thead>
+                <tr>
+                    <th>رقم الطالب</th>
+                    <th>اسم الطالب</th>
+                    <th>اسم الحلقة</th>
+                    <th>رقم الحساب</th>
+                    <th>حالة الحساب</th>
+                    <th> رقم الهاتف</th>
+                    <th> عرض</th>
+                    <th>تعديل</th>
+                    <th>حذف</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>يزيد ولدي الاسطل</td>
+                    <td>أ</td>
+                    <td>1001</td>
+                    <td>مفعل</td>
+                    <td>0</td>
+                    <td><a href=""><i class="fa-solid fa-eye"></i></a></td>
+                    <td><a href="studUpdate.html"><i class="fa-solid fa-repeat"></i></a></td>
+                    <td><a href=""><i class="fa-solid fa-trash"></i></a></td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>

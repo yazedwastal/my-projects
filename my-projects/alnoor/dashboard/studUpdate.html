@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css Link -->
+    <link rel="stylesheet" href="../style.css">
+    <!--  Font Awesome Icons Link   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Icon Page -->
+    <link rel="icon" href="../img/1730056726850.png">
+    <title>تعديل بيانات طالب</title>
+</head>
+<body>
+    <!-- Log In Page  -->
+    <div class="container container-dash">
+        <!-- header -->
+        <header class="headerLogIn">
+            <div class="logo">
+                <img src="../img/1730056726850.png" alt="">
+                <h1>نظام النور الالكتروني <br> لتحفيظ القرآن الكريم</h1>
+            </div>
+            <div>
+                <div class="profImg">
+                    <h4>يزيد وليد</h4>
+                    <img class="" src="../img/me3.png" alt="مركز النور">
+                </div>
+                <a href="../login.html" class="logoutBtn" id="logoutBtn">
+                    <h3>تسجيل الخروج</h3>
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+            </div>
+        </header>
+        <!-- List Right Page  -->
+       <div class="listRight">
+           <i id="list" class="fa-solid fa-list"></i>
+           <span id="closeList">x</span>
+           <nav class="nav">
+            <h3 class="idaraName">صفحة الإدارة</h3>
+            <!-- navBar  -->
+            <ul>
+                <li class="activeMain"><a href="">الرئيسية</a></li>
+                <li><a href=""> الطلاب</a></li>
+                <li><a href=""> المعلمون</a></li>
+                <li><a href="">الحلقات</a>  </li>
+                <li><a href="">الحضور والغياب</a> </li>
+                <li><a href="">الإختبارات</a> </li>
+                <li><a href="">سجل المتابعة</a> </li>
+                <li><a href="">الاستعلامات والتقارير</a> </li>
+                <li><a href="">أولياء الأمور</a> </li>
+             </ul>
+        </nav>
+       </div>
+       <!-- head Information -->
+       <div class="head-inf">
+           <div class="head-inf-in">
+                <a href="index.html">الرئيسية /</a>
+                <a href="setting.html">الإعدادات /</a>
+                <a href="accountSett.html">إدارة الحسابات /</a>
+                <a href="studentSett.html">الطلاب /</a>
+                <a href="studUpdate.html" class="active-head">تعديل بيانات طالب</a>
+           </div>
+       </div>
+       <!-- center Page  -->
+        <form action="" class="changePass">
+            <div class="">
+                <label for="studName">اسم الطالب</label>
+                <input type="text" id="studName" placeholder="أدخل اسمك" required> 
+            </div>
+            <div class="">
+                <label for="halaqaName">اسم الحلقة </label>
+                <input type="text" id="halaqaName" placeholder="أدخل اسم حلقتك" required>
+            </div>
+            <div class="">
+                <label for="idAccount">رقم الحساب </label>
+                <input type="number" id="idAccount" placeholder="أدخل رقم حسابك" required>
+            </div>
+            <div class="">
+                <label for="accountStat">حالة الحساب </label>
+                <select name="" id="accountStat">
+                    <option value="">مفعل</option>
+                    <option value="">غير مفعل</option>
+                </select>
+            </div>
+            <div class="">
+                <label for="phoneNum">رقم الهاتف </label>
+                <input type="number" id="phoneNum" placeholder="أدخل رقم هاتفك" required>
+            </div>
+            
+            <input type="submit" value="تعديل" required name="" id="">
+        </form>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>

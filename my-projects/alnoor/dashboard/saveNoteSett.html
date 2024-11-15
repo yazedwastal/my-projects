@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css Link -->
+    <link rel="stylesheet" href="../style.css">
+    <!--  Font Awesome Icons Link   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Icon Page -->
+    <link rel="icon" href="../img/1730056726850.png">
+    <title>سجل الحفظ</title>
+</head>
+<body>
+    <!-- Log In Page  -->
+    <div class="container container-dash">
+        <!-- header -->
+        <header class="headerLogIn">
+            <div class="logo">
+                <img src="../img/1730056726850.png" alt="">
+                <h1>نظام النور الالكتروني <br> لتحفيظ القرآن الكريم</h1>
+            </div>
+            <div>
+                <div class="profImg">
+                    <h4>يزيد وليد</h4>
+                    <img class="" src="../img/me3.png" alt="مركز النور">
+                </div>
+                <a href="../login.html" class="logoutBtn" id="logoutBtn">
+                    <h3>تسجيل الخروج</h3>
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+            </div>
+        </header>
+        <!-- List Right Page  -->
+       <div class="listRight">
+           <i id="list" class="fa-solid fa-list"></i>
+           <span id="closeList">x</span>
+           <nav class="nav">
+            <h3 class="idaraName">صفحة الإدارة</h3>
+            <!-- navBar  -->
+            <ul>
+                <li class="activeMain"><a href="">الرئيسية</a></li>
+                <li><a href=""> الطلاب</a></li>
+                <li><a href=""> المعلمون</a></li>
+                <li><a href="">الحلقات</a>  </li>
+                <li><a href="">الحضور والغياب</a> </li>
+                <li><a href="">الإختبارات</a> </li>
+                <li><a href="">سجل المتابعة</a> </li>
+                <li><a href="">الاستعلامات والتقارير</a> </li>
+                <li><a href="">أولياء الأمور</a> </li>
+             </ul>
+        </nav>
+       </div>
+       <!-- head Information -->
+       <div class="head-inf">
+           <div class="head-inf-in">
+                <a href="index.html">الرئيسية /</a>
+                <a href="saveNoteSett.html" class="active-head">سجل الحفظ</a>
+           </div>
+       </div>
+         <!-- tables -->
+          <div class="table">
+            <style>
+                table thead a{
+                    text-decoration: none;
+                    color: white;
+                }
+                table thead i{
+                    text-decoration: none;
+                    color: white;
+                    margin-left: 5px;
+                }
+            </style>
+          <table >
+            <thead>
+                <tr>
+                    <th><a href="saveAddSett.html"><i class="fa-solid fa-file-lines"></i>إضافة سجل حفظ جديد</a></th>
+                    <th><a href="saveShowSett.html"><i class="fa-solid fa-eye"></i>عرض سجل الحفظ</a></th>
+                    <th><a href="saveUpdateSett.html"><i class="fa-solid fa-clipboard "></i>تعديل سجل الحفظ</a></th>
+                    <th><a href="saveSearchSett.html"><i class="fa-solid fa-search"></i>بحث عن سجل الحفظ</a></th>
+                    <th><a href="saveDeleteSett.html"><i class="fa-solid fa-trash"></i>حذف سجل الحفظ</a></th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- css Link -->
+     <link rel="stylesheet" href="../style.css">
+     <!--  Font Awesome Icons Link   -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Icon Page -->
+     <link rel="icon" href="../img/1730056726850.png">
+     <title>صفحة الإدارة</title>
+</head>
+<body>
+     <!-- Log In Page  -->
+    <div class="container container-dash">
+        <!-- header -->
+        <header class="headerLogIn">
+            <div class="logo">
+                <img src="../img/1730056726850.png" alt="">
+                <h1>نظام النور الالكتروني <br> لتحفيظ القرآن الكريم</h1>
+            </div>
+            <div>
+                <div class="profImg">
+                    <h4>يزيد وليد</h4>
+                    <img class="" src="../img/me3.png" alt="مركز النور">
+                </div>
+                <a href="../login.html" class="logoutBtn" id="logoutBtn">
+                    <h3>تسجيل الخروج</h3>
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+            </div>
+        </header>
+        <!-- List Right Page  -->
+       <div class="listRight">
+           <i id="list" class="fa-solid fa-list"></i>
+           <span id="closeList">x</span>
+           <nav class="nav">
+            <h3 class="idaraName">صفحة الإدارة</h3>
+            <!-- navBar  -->
+            <ul>
+                <li class="activeMain"><a href="">الرئيسية</a></li>
+                <li id="accordion">
+                    <a> الطلاب</a>
+                </li>
+                <div id="desc">
+                    <h4><a href="">عرض قائمة الطلاب</a></h4>
+                    <h4><a href="">إضافة بيانات طلاب</a></h4>
+                </div>
+                <li id="accordion">
+                    <a>المعلمون</a>
+                </li>
+                <div id="desc">
+                    <h4><a href="">عرض قائمة المعلمون</a></h4>
+                    <h4><a href="">إضافة بيانات معلم</a></h4>
+                </div>
+                <li id="accordion">
+                    <a>الحلقات</a>
+                </li>
+                <div id="desc">
+                    <h4><a href="">عرض قائمة الحلقات</a></h4>
+                    <h4><a href="">إضافة بيانات حلقة</a></h4>
+                </div>
+                <li id="accordion">
+                    <a>الحضور والغياب</a>
+                </li>
+                <div id="desc">
+                    <h4><a href="">سجل حضور الطلاب</a></h4>
+                    <h4><a href="">سجل حضور المعلمين</a></h4>
+                    <h4><a href="">إنشاء سجل حضور جديد للطلاب</a></h4>
+                    <h4><a href="">إنشاء سجل حضور جديد للمعلمين</a></h4>
+                    <h4><a href="">بحث في سجل الطلاب</a></h4>
+                    <h4><a href="">بحث في سجل المعلمين</a></h4>
+                    <h4><a href="">تعديل سجل غياب الطلاب</a></h4>
+                    <h4><a href="">تعديل سجل غياب المعلمون</a></h4>
+                    <h4><a href="">حذف سجل غياب الطلاب</a></h4>
+                    <h4><a href="">حذف سجل غياب المعلمون</a></h4>
+                </div>
+                <li id="accordion">
+                    <a>الإختبارات</a>
+                </li>
+                <div id="desc">
+                    <h4><a href="">عرض الإختبارات لجميع الطلاب</a></h4>
+                    <h4><a href="">بحث عن سجل اختبار</a></h4>
+                    <h4><a href="">إضافة سجل اختبار جديد</a></h4>
+                    <h4><a href="">تعديل سجل اختبار</a></h4>
+                    <h4><a href="">حذف سجل اختبار</a></h4>
+                </div>
+                <li id="accordion">
+                    <a>سجل المتابعة</a>
+                </li>
+                <div id="desc">
+                    <h4><a href="">عرض قائمة سجلات المتابعة</a></h4>
+                    <h4><a href="">بحث عن سجل حفظ</a></h4>
+                    <h4><a href="">إضافة سجل حفظ جديد</a></h4>
+                    <h4><a href="">تعديل سجل حفظ</a></h4>
+                    <h4><a href="">حذف سجل حفظ</a></h4>
+                </div>
+                <li id="accordion">
+                    <a>الاستعلامات والتقارير</a>
+                </li>
+                <div id="desc">
+                    <h4><a href="">حاسبة توقع تاريخ الختمة</a></h4>
+                    <h4><a href="">حاسبة مدة الحفظ بين موضعين</a></h4>
+                    <h4><a href="">توقع ختمة الطلاب تلقائيا</a></h4>
+                    <h4><a href="">حاسبة معدل الحفظ</a></h4>
+                </div>
+                <li id="accordion">
+                    <a>أولياء الأمور</a>
+                </li>
+                <div id="desc">
+                    <h4><a href="">عرض قائمة أولياء الأمور</a></h4>
+                    <h4><a href="">إضافة ولي أمر طالب جديد</a></h4>
+                </div>
+             </ul>
+        </nav>
+       </div>
+       <!-- center Page  -->
+        <div class="center-dash">
+            <!-- card -->
+            <a class="card card1">
+                <i class="fa-solid fa-user"></i>
+                <h4>الطلاب</h4>
+            </a>
+            <a class="card card2">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h4>المعلمون</h4>
+            </a>
+            <a class="card card3">
+                <i class="fa-solid fa-user"></i>
+                <h4>أولياء الأمور</h4>
+            </a>
+            <a class="card card4">
+                <i class="fa-solid fa-chalkboard "></i>
+                <h4>الحلقات</h4>
+            </a>
+            <a class="card card5">
+                <i class="fa-solid fa-clipboard "></i>
+                <h4>الحضور و الغياب</h4>
+            </a>
+            <a href="saveNoteSett.html" class="card card6">
+                <i class="fa-solid fa-file-circle-check "></i>
+                <h4>سجل الحفظ</h4>
+            </a>
+            <a class="card card7">
+                <i class="fa-solid fa-clipboard "></i>
+                <h4>سجل المراجعة</h4>
+            </a>
+            <a class="card card8">
+                <i class="fa-solid fa-book-open-reader"></i>
+                <h4>الامتحانات</h4>
+            </a>
+            <a href="report.html" class="card card9">
+                <i class="fa-solid fa-file-lines"></i>
+                <h4>الاستعلامات و التقارير</h4>
+            </a>
+            <a class="card card10">
+                <i class="fa-solid fa-envelope"></i>
+                <h4>الرسائل</h4>
+            </a>
+            <a class="card card11">
+                <i class="fa-brands fa-leanpub"></i>
+                <h4>القرآن الكريم</h4>
+            </a>
+            <a href="setting.html" class="card card12">
+                <i class="fa-solid fa-gear"></i>
+                <h4>الإعدادات</h4>
+            </a>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>
